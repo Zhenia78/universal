@@ -1,0 +1,275 @@
+.header
+  font-family: Lato, sans-serif
+  background-color: #ffffff
+  &-top
+    position: relative
+    display: flex
+    justify-content: space-between
+    align-items: center 
+    border-bottom: 1px solid #D9DADB
+    &__image
+      display: none
+    &__search
+      margin: 0 auto 0 25px
+  &__subscription
+    display: flex
+    justify-content: space-between
+    align-self: flex-end
+    margin: 0 57px 0 0
+  &-middle
+    position: relative
+    display: flex
+    justify-content: space-between
+    align-items: center 
+    height: 84px
+    padding: 0 0 0 30px
+    &__logo-block
+      display: flex
+      justify-content: space-between
+      align-items: center
+      height: 100%
+    &__image
+      margin: 0 15px 0 0
+    &__text
+      max-width: 300px
+      text-overflow: ellipsis
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: #4B5157
+      overflow: hidden
+    &__logo
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+    &__information-block
+      display: flex
+      justify-content: space-between
+      align-items: center
+    &__temperature
+      margin: 0 0 0 60px
+  &-bottom
+    padding: 18px 0
+    background: #262D33
+  &__nav
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__link
+    font-weight: 800
+    font-size: 14px
+    line-height: 20px
+    letter-spacing: 0.5px
+    text-transform: uppercase
+    color: #FFFFFF
+  &__title, &__item > a
+    color: #ffffff
+  
+
+
+
+.burger
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 15px 25px 15px 0
+  border-right: 1px solid #D9DADB
+  cursor: pointer
+  &__title
+    font-weight: 800           
+    font-size: 14px
+    line-height: 20px
+    color: #262D33
+  &__button
+    position: relative
+    width: 18px 
+    height: 14px
+    margin: 0 16px 0 0
+    background-color: transparent
+    &>span:nth-child(1)
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 2px
+      background-color: #BCBFC2
+      transition: all 0.4s ease
+    &>span:nth-child(2)
+      position: absolute
+      top: 6px
+      left: 0
+      width: 13px
+      height: 2px
+      background-color: #BCBFC2
+    &>span:nth-child(3)
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0
+      width: 100%
+      height: 2px
+      background-color: #BCBFC2
+      transition: all 0.4s ease
+@media (min-width: 480px)
+  .burger
+    &__button
+      &.menu-active
+        position: relative
+        z-index: 100
+        margin: 0
+        &:before
+          content: ''
+          position: absolute
+          left: -15.5px
+          width: 50px
+          height: 50px
+          background-color: #ffffff
+          border-radius: 0 0 10px 10px
+          animation: fadeDown 0.5s ease 1 normal 0s forwards
+        &>span:nth-child(1)
+          animation: rotate45 1s ease 1 normal 0s forwards
+        &>span:nth-child(2)
+          transform: scale(0)
+        &>span:nth-child(3)
+          animation: rotate-45 1s ease 1 normal 0s forwards
+
+  @keyframes fadeDown
+    0%
+      top: -69px
+    100%
+      top: -19px
+
+  @keyframes rotate45
+    0%
+      visibility: hidden
+    60%
+      visibility: visible
+    100%
+      top: 6px
+      transform: rotate(45deg)
+
+  @keyframes rotate-45
+    0%
+      visibility: hidden
+    60%
+      visibility: visible
+    100%
+      bottom: 6px
+      transform: rotate(-45deg)
+
+
+.search
+  display: flex
+  align-items: center
+  &__button
+    width: 18px
+    height: 18px
+    margin: 0 11px 0 0
+    overflow: auto
+  &__input
+    width: 43px
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: #939699
+    background-color: transparent
+    border: none
+    &:focus
+      padding: 10px 15px
+      border: 1px solid #EDEFF0 
+      border-radius: 6px
+      width: min-content
+
+.initial-subscription
+  &__image
+    width: 66px
+    height: 44px
+    margin: 0 10px 0 0
+    object-fit: cover
+  &__title
+    font-weight: 800
+    font-size: 12px
+    line-height: 15px
+    color: #262D33
+  &__price
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    color: #939699
+
+.person-room
+  display: flex
+  align-items: center
+  justify-content: space-between
+  &__image
+    max-width: 16px 
+    max-height: 18px
+    margin: 0 10px 0 0
+  &__text
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: #4B5157
+
+.logo
+  width: 184px
+  height: 40px
+  &__image
+    height: 100%
+    width: 100px
+    overflow: hidden
+
+.date
+  font-weight: normal
+  font-size: 14px
+  line-height: 20px
+  color: #4B5157
+
+.temperature
+  &__icon
+    width: 20px
+    height: 20px
+  &__num
+    display: inline-block
+    margin: 0 0 0 10px
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: #4B5157
+
+.dropdown-menu
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  z-index: 50
+  visibility: hidden
+  opacity: 0
+  width: 100%
+  height: 100%
+  padding: 40px 0
+  background: #262D33
+  transition: all 0.5s ease
+  overflow: auto
+  &__wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+  &__person-room
+    margin: 0 0 24px 0
+    &-text
+      color: #FFFFFF
+  &__search
+    margin: 0 0 24px 0
+  &.menu-active
+    visibility: visible
+    opacity: 1
+    
+
+
+
+    
+  
+

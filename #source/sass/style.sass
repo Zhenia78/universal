@@ -3,6 +3,29 @@
 //</МИКСИНЫ>=============================================================================================================
 
 //<ШРИФТЫ>===============================================================================================================
+@font-face
+  font-family: 'Lato'
+  src: url('../fonts/Lato-Heavy.eot')
+  src: local('☺'), url('../fonts/Lato-Heavy.woff') format('woff'), url('../fonts/Lato-Heavy.ttf') format('truetype')
+  font-weight: 800
+  font-style: normal
+  font-display: swap
+
+@font-face
+  font-family: 'Lato'
+  src: url('../fonts/Lato-Regular.eot')
+  src: local('☺'), url('../fonts/Lato-Regular.woff') format('woff'), url('../fonts/Lato-Regular.ttf') format('truetype')
+  font-weight: 400
+  font-style: normal
+  font-display: swap
+
+@font-face
+  font-family: 'Roboto-Slab'
+  src: url('../fonts/RobotoSlab-Bold.eot')
+  src: local('☺'), url('../fonts/RobotoSlab-Bold.woff') format('woff'), url('../fonts/RobotoSlab-Bold.ttf') format('truetype')
+  font-weight: normal
+  font-style: normal
+  font-display: swap
 
 //</ШРИФТЫ>==============================================================================================================
 
@@ -20,6 +43,10 @@
   min-height: 100%
   overflow: hidden
 
+body
+  &.menu-active
+    overflow: hidden
+
 //</ОБОЛОЧКА>============================================================================================================
 
 //<ОСНОВНАЯ СЕТКА>=======================================================================================================
@@ -29,23 +56,134 @@
   width: 100%
 
   @media (max-width: $md1+px)
-    max-width: 970px
+    max-width: 960px
 
   @media (max-width: $md2+px)
-    max-width: 750px
+    max-width: 700px
 
   @media (max-width: $md3+px)
+    max-width: 530px
+
+  @media (max-width: $md4+px)
+    max-width: 440px
+
+  @media (max-width: $md5+px)
     max-width: none
-    padding: 0 10px
+    padding: 0 20px
 
 //</ОСНОВНАЯ СЕТКА>======================================================================================================
 
 //<ОСНОВНОЙ БЛОК>========================================================================================================
+.author
+  display: flex
+  &__avatar
+    margin: 0 10px 0 0
+  &__name
+    margin: 0 0 2px 0
+    font-family: Lato, sans-serif
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: #FFFFFF
+    opacity: 0.85
+  &__subtitle
+    font-family: Lato, sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    color: #FFFFFF
+    opacity: 0.4
 
+.avatar
+  width: 45px
+  height: 45px
+  border-radius: 50%
+  overflow: hidden
+
+.subject
+  display: inline-block
+  font-family: Lato, sans-serif
+  font-weight: 800
+  font-size: 12px
+  line-height: 15px
+  letter-spacing: 0.5px
+  text-transform: uppercase
+
+.index-body
+  background: #EDEFF0
+
+.fit-img
+  max-width: 100%
+  height: 100%
+  object-fit: cover
+
+button
+  background-color: transparent
+
+hr
+  width: 100%
+
+.menu
+  display: grid
+  grid-template-columns: repeat(6, 16.666%)
+  width: 100%
+  &__list
+    justify-self: center
+  &__title
+    margin: 0 0 25px 0
+    font-family: Lato, sans-serif
+    font-weight: 800
+    font-size: 14px
+    line-height: 20px
+  &__item
+    margin: 0 0 15px 0
+    font-family: Lato, sans-serif
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+
+.heading
+  font-family: Roboto-Slab, serif
+  font-weight: bold
+  font-size: 40px
+  line-height: 50px
+  color: #FFFFFF
+
+.title
+  font-family: Roboto-Slab, serif
+  font-style: normal
+  font-weight: bold
+  font-size: 16px
+  line-height: 25px
+  letter-spacing: 0.5px
+  color: #000000
+
+.button
+  font-family: Lato
+  font-weight: 800
+  font-size: 14px
+  line-height: 20px
+  color: #FFFFFF
+  background: #4592FF
+  border-radius: 20px
+  &__icon
+    margin: 0 0 0 5px
+
+.caption
+  font-family: Lato
+  font-style: normal
+  font-weight: 800
+  font-size: 14px
+  line-height: 20px
+  letter-spacing: 0.5px
+  text-transform: uppercase
 //</ОСНОВНОЙ БЛОК>=======================================================================================================
 
 //<ПОДКЛЮЧЕНИЯ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЕЛМЕНТОВ>=========================================================================
 @import "blocks/_header.sass"
+@import "blocks/_todays-news.sass"
+@import "blocks/_tabs.sass"
 @import "blocks/_footer.sass"
+@import "_media.sass"
 //</ПОДКЛЮЧЕНИЯ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЕЛМЕНТОВ>========================================================================
-

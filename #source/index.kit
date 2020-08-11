@@ -5,6 +5,7 @@
   <title>Universal</title>
   <meta charset="UTF-8">
   <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css\swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
   <!-- <link rel="shortcut icon" type="image/x-icon" href=""> -->
   <!-- <meta name="robots" content="noindex, nofollow"/> -->
@@ -12,7 +13,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body>
+<body class="index-body">
   <div class="wrapper">
     <!-- @import: "header.html" -->
 
@@ -21,20 +22,20 @@
         <div class="container">
           <div class="todays-news__wrapper">
             <a href="#" class="todays-news__item">
-              <p class="todays-news__text"></p>
-              <img src="" alt="news-img" class="todays-news__image">
+              <h3 class="todays-news__title title">25 Songs That Tell Us Where Music Is Going</h3>
+              <img src="img/todays-news-img-1.jpg" alt="news-img" class="fit-img todays-news__image">
             </a>
             <a href="#" class="todays-news__item">
-              <p class="todays-news__text"></p>
-              <img src="" alt="news-img" class="todays-news__image">
+              <h3 class="todays-news__title title">These Ancient Assassins Eat Their Own Kind</h3>
+              <img src="img/todays-news-img-2.jpg" alt="news-img" class="fit-img todays-news__image">
             </a>
             <a href="#" class="todays-news__item">
-              <p class="todays-news__text"></p>
-              <img src="" alt="news-img" class="todays-news__image">
+              <h3 class="todays-news__title title">How Do You Teach People to Love Difficult Music?</h3>
+              <img src="img/todays-news-img-3.jpg" alt="news-img" class="fit-img todays-news__image">
             </a>
             <a href="#" class="todays-news__item">
-              <p class="todays-news__text"></p>
-              <img src="" alt="news-img" class="todays-news__image">
+              <h3 class="todays-news__title title">International Soccer’s Man of Mystery</h3>
+              <img src="img/todays-news-img-4.jpg" alt="news-img" class="fit-img todays-news__image">
             </a>
           </div>
           <!-- /.todays-news__wrapper -->
@@ -46,19 +47,78 @@
       <div class="container">
         <section class="tabs">
           <div class="tabs-body">
-            <div class="tabs__block tabs-block">
+            <div id="tab-1" class="tabs__block tabs-block tab-active">
               <div class="author">
-                <div class="avatar"><img src="" alt=""></div>
+                <div class="avatar author__avatar"><img class="fit-img" src="img/user-1.jpg" alt=""></div>
                 <div>
                   <h4 class="author__name">by Benjamin Turner</h4>
                   <span class="author__subtitle">Traveler</span>
                 </div>
               </div>
               <div class="tabs-block__information">
-                <span class="tabs-block__destination">destinations</span>
+                <span class="subject tabs-block__subject">destinations</span>
+                <h2 class="heading tabs-block__heading">In Southeast England, White Cliffs and Fish</h2>
+                <div class="tabs-block__additional-info">
+                  <a href="#" class="button tabs-block__button">Read more<img src="img/icons/more-arrow.svg" alt="&gt;"
+                      class="button__icon"></a>
+                  <div class="video">
+                    <button class="video__button"><img src="img/icons/play.svg" alt=""></button>
+                    <div>
+                      <h3 class="video__title">The chalk cliff of Beachy Head</h3>
+                      <span class="video__time">18:05</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.tabs-block -->
+            <div id="tab-2" class="tabs__block tabs-block">
+              <div class="author">
+                <div class="avatar"><img class="fit-img" src="img/user-2.jpg" alt=""></div>
+                <div>
+                  <h4 class="author__name"></h4>
+                  <span class="author__subtitle"></span>
+                </div>
+              </div>
+              <div class="tabs-block__information">
+                <span class="subject tabs-block__subject">destinations</span>
                 <h2 class="heading tabs-block__heading"></h2>
                 <div class="tabs-block__additional-info">
-                  <a href="#" class="button">Read more<img src="" alt=">" class="button__icon"></a>
+                  <a href="#" class="button">Read more<img src="" alt="&gt;" class="button__icon"></a>
+                </div>
+              </div>
+            </div>
+            <!-- /.tabs-block -->
+            <div id="tab-3" class="tabs__block tabs-block">
+              <div class="author">
+                <div class="avatar"><img class="fit-img" src="img/user-3.jpg" alt=""></div>
+                <div>
+                  <h4 class="author__name"></h4>
+                  <span class="author__subtitle"></span>
+                </div>
+              </div>
+              <div class="tabs-block__information">
+                <span class="subject tabs-block__subject">destinations</span>
+                <h2 class="heading tabs-block__heading"></h2>
+                <div class="tabs-block__additional-info">
+                  <a href="#" class="button">Read more<img src="" alt="&gt;" class="button__icon"></a>
+                </div>
+              </div>
+            </div>
+            <!-- /.tabs-block -->
+            <div id="tab-4" class="tabs__block tabs-block">
+              <div class="author">
+                <div class="avatar"><img class="fit-img" src="img/user-4.jpg" alt=""></div>
+                <div>
+                  <h4 class="author__name"></h4>
+                  <span class="author__subtitle"></span>
+                </div>
+              </div>
+              <div class="tabs-block__information">
+                <span class="subject tabs-block__subject">destinations</span>
+                <h2 class="heading tabs-block__heading"></h2>
+                <div class="tabs-block__additional-info">
+                  <a href="#" class="button">Read more<img src="" alt="&gt;" class="button__icon"></a>
                   <div class="video">
                     <button class="video__button"></button>
                     <div class="video__information">
@@ -70,77 +130,19 @@
               </div>
             </div>
             <!-- /.tabs-block -->
-            <div class="tabs__block tabs-block">
+            <div id="tab-5" class="tabs__block tabs-block">
               <div class="author">
-                <div class="avatar"><img src="" alt=""></div>
+                <div class="avatar"><img class="fit-img" src="img/user-5.jpg" alt=""></div>
                 <div>
                   <h4 class="author__name"></h4>
                   <span class="author__subtitle"></span>
                 </div>
               </div>
               <div class="tabs-block__information">
-                <span class="tabs-block__destination">destinations</span>
+                <span class="subject tabs-block__subject">destinations</span>
                 <h2 class="heading tabs-block__heading"></h2>
                 <div class="tabs-block__additional-info">
-                  <a href="#" class="button">Read more<img src="" alt=">" class="button__icon"></a>
-                </div>
-              </div>
-            </div>
-            <!-- /.tabs-block -->
-            <div class="tabs__block tabs-block">
-              <div class="author">
-                <div class="avatar"><img src="" alt=""></div>
-                <div>
-                  <h4 class="author__name"></h4>
-                  <span class="author__subtitle"></span>
-                </div>
-              </div>
-              <div class="tabs-block__information">
-                <span class="tabs-block__destination">destinations</span>
-                <h2 class="heading tabs-block__heading"></h2>
-                <div class="tabs-block__additional-info">
-                  <a href="#" class="button">Read more<img src="" alt=">" class="button__icon"></a>
-                </div>
-              </div>
-            </div>
-            <!-- /.tabs-block -->
-            <div class="tabs__block tabs-block">
-              <div class="author">
-                <div class="avatar"><img src="" alt=""></div>
-                <div>
-                  <h4 class="author__name"></h4>
-                  <span class="author__subtitle"></span>
-                </div>
-              </div>
-              <div class="tabs-block__information">
-                <span class="tabs-block__destination">destinations</span>
-                <h2 class="heading tabs-block__heading"></h2>
-                <div class="tabs-block__additional-info">
-                  <a href="#" class="button">Read more<img src="" alt=">" class="button__icon"></a>
-                  <div class="video">
-                    <button class="video__button"></button>
-                    <div class="video__information">
-                      <h3 class="video__title"></h3>
-                      <span class="video__time"></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- /.tabs-block -->
-            <div class="tabs__block tabs-block">
-              <div class="author">
-                <div class="avatar"><img src="" alt=""></div>
-                <div>
-                  <h4 class="author__name"></h4>
-                  <span class="author__subtitle"></span>
-                </div>
-              </div>
-              <div class="tabs-block__information">
-                <span class="tabs-block__destination">destinations</span>
-                <h2 class="heading tabs-block__heading"></h2>
-                <div class="tabs-block__additional-info">
-                  <a href="#" class="button">Read more<img src="" alt=">" class="button__icon"></a>
+                  <a href="#" class="button">Read more<img src="" alt="&gt;" class="button__icon"></a>
                 </div>
               </div>
             </div>
@@ -148,31 +150,33 @@
           </div>
           <!-- /.tabs-body -->
           <nav class="tabs-items">
-            <h3 class="tabs-items__recommendation">Recommended for you</h3>
+            <h3 class="caption tabs-items__recommendation">Recommended for you</h3>
             <ul class="tabs-items__list">
-              <li class="tabs-item">
+              <li data-target="tab-1" class="tabs-item tab-active">
                 <span class="subject tabs-item__title">food</span>
                 <p class="text tabs-item__description">
-                  <img src="" alt="play">
+                  For Chicken-Fried Steak, Too Much Is Just Enough
+                  <img src="img/icons/play-button.svg" alt="play">
                 </p>
               </li>
-              <li class="tabs-item">
+              <li data-target="tab-2" class="tabs-item">
                 <span class="subject tabs-item__title">cars</span>
-                <p class="text tabs-item__description"></p>
+                <p class="text tabs-item__description">Storm Has Car Dealers Doing Swift Business</p>
               </li>
-              <li class="tabs-item">
+              <li data-target="tab-3" class="tabs-item">
                 <span class="subject tabs-item__title">movies</span>
-                <p class="text tabs-item__description"></p>
+                <p class="text tabs-item__description">War Is Hell? In New Military Dramas, It’s One-Dimensional</p>
               </li>
-              <li class="tabs-item">
+              <li data-target="tab-4" class="tabs-item">
                 <span class="subject tabs-item__title">nfl</span>
                 <p class="text tabs-item__description">
-                  <img src="" alt="play">
+                  11 surprising stat rankings for active NFL players
+                  <img src="img/icons/play-button.svg" alt="play">
                 </p>
               </li>
-              <li class="tabs-item">
+              <li data-target="tab-5" class="tabs-item">
                 <span class="subject tabs-item__title">tech reviews</span>
-                <p class="text tabs-item__description"></p>
+                <p class="text tabs-item__description">The bookcases you can buy online and assemble yourself</p>
               </li>
             </ul>
           </nav>
@@ -180,355 +184,11 @@
         </section>
         <!-- /.tabs -->
 
-        <section class="three-day-news">
-          <div class="first-news">
-            <div class="first-news__info">
-              <span class="subject">cars</span>
-              <h3 class="title first-news__title">
-                <a href="#"></a>
-              </h3>
-              <p class="text first-news__text"></p>
-            </div>
-            <div class="first-news__image"><img src="" alt="first-news-image"></div>
-            <hr>
-            <a href="#">
-              <div class="first-news-comment">
-                <div class="avatar first-news-comment__avatar"><img src="" alt="Author:Jessica"></div>
-                <h4 class="first-news-comment__name">Jessica Miller:</h4>
-                <p class="first-news-comment__text"></p>
-                <span class="comments-number first-news-comment__number"><img src="" alt="comment"
-                    class="comment-icon">342</span>
-              </div>
-            </a>
-          </div>
-          <!-- /.first-news -->
-          <div class="secondary-news">
-            <div class="popular">Popular</div>
-            <span class="subject">art & design</span>
-            <h3 class="title secondary-news__title"><a href="#"></a></h3>
-            <a href="#">
-              <div class="secondary-news-comment">
-                <div class="avatar"><img src="" alt="Author:Jessica"></div>
-                <div>
-                  <h4 class="secondary-news-comment__name">By Sarah Jenkins</h4>
-                  <time datetime="2018-09-26 19:00" class="publication-date">Sept 26</time>
-                  <span class="comments-number secondary-news-comment__number"><img src="" alt="comments"
-                      class="comment-icon">342</span>
-                  <span class="likes-number secondary-news-comment__likes"><img src="" alt="likes"
-                      class="like-icon">832</span>
-                </div>
-              </div>
-            </a>
-          </div>
-          <!-- /.secondary-news -->
-          <a class="third-news" href="#">
-            <figure>
-              <img class="third-news__image" src="" alt="third-news-image">
-              <figcaption class="title"></figcaption>
-            </figure>
-          </a>
-          <!-- /.third-news -->
-          <a class="common-news three-day-news_common" href="#">
-            <div>
-              <h3 class="title common-news__title"></h3>
-              <p class="text common-news__text"></p>
-              <time datetime="2018-10-15 19:00" class="publication-date">Oct 15</time>
-            </div>
-          </a>
-          <!-- /.common-news -->
-          <a class="common-news three-day-news_common" href="#">
-            <div>
-              <h3 class="title common-news__title"></h3>
-              <p class="text common-news__text"></p>
-              <time datetime="2018-10-14 19:00" class="publication-date">Oct 14</time>
-            </div>
-          </a>
-          <!-- /.common-news -->
-          <a class="common-news three-day-news_common" href="#">
-            <div>
-              <h3 class="title common-news__title"></h3>
-              <p class="text common-news__text"></p>
-              <time datetime="2018-10-14 19:00" class="publication-date">Oct 14</time>
-            </div>
-          </a>
-          <!-- /.common-news -->
-          <a class="common-news three-day-news_common" href="#">
-            <div>
-              <h3 class="title common-news__title"></h3>
-              <p class="text common-news__text"></p>
-              <time datetime="2018-10-13 19:00" class="publication-date">Oct 13</time>
-            </div>
-          </a>
-          <!-- /.common-news -->
-          <div class="news-column">
-            <h3 class="news-column__heading">columns</h3>
-            <ul class="news-column__list">
-              <li class="news-column__item">
-                <h3 class="news-column__title"><a href="#"></a></h3>
-                <div class="author">
-                  <div class="avatar"><img src="" alt=""></div>
-                  <div>
-                    <h4 class="author__name"></h4>
-                    <span class="author__subtitle"></span>
-                  </div>
-                </div>
-              </li>
-              <li class="news-column__item">
-                <h3 class="news-column__title"><a href="#"></a></h3>
-                <div class="author">
-                  <div class="avatar"><img src="" alt=""></div>
-                  <div>
-                    <h4 class="author__name"></h4>
-                    <span class="author__subtitle"></span>
-                  </div>
-                </div>
-              </li>
-              <li class="news-column__item">
-                <h3 class="news-column__title"><a href="#"></a></h3>
-                <div class="author">
-                  <div class="avatar"><img src="" alt=""></div>
-                  <div>
-                    <h4 class="author__name"></h4>
-                    <span class="author__subtitle"></span>
-                  </div>
-                </div>
-              </li>
-            </ul>
-            <a href="#" class="more news-column__more">Read more</a>
-          </div>
-          <!-- /.news-column -->
-        </section>
-        <!-- /.three-day-news -->
+
+
+        <!-- @import: "footer.html" -->
       </div>
-      <!-- /.container -->
-
-      <section class="headline-news">
-        <div class="container">
-          <h2 class="heading headline-news__heading"></h2>
-          <a href="#" class="button">Read more<img src="" alt=">" class="button__icon"></a>
-        </div>
-        <!-- /.container -->
-      </section>
-      <!-- /.headline-news -->
-      <div class="container">
-        <section class="weekly-news">
-          <div class="weekly-news__body">
-            <article class="weekly-news-article weekly-news__article">
-              <span class="label"><img class="label__icon" src="" alt="label"></span>
-              <div class="weekly-news-article__image"><img src="" alt=""></div>
-              <div>
-                <span class="subject">flights</span>
-                <h3 class="title weekly-news-article__title"></h3>
-                <p class="text weekly-news-article__text"></p>
-                <footer class="weekly-news-article__footer">
-                  <time datetime="2018-08-06 20:00" class="publication-date">Aug 6</time>
-                  <span class="comments-number"><img src="" alt="comments" class="comment-icon">342</span><span
-                    class="likes-number"><img src="" alt="likes" class="like-icon">830</span>
-                </footer>
-              </div>
-            </article>
-            <!-- /.weekly-news-article -->
-            <hr>
-            <article class="weekly-news-article weekly-news__article">
-              <span class="label"><img class="label__icon" src="" alt="label"></span>
-              <div class="weekly-news-article__image"><img src="" alt=""></div>
-              <div>
-                <span class="subject">food</span>
-                <h3 class="title weekly-news-article__title"></h3>
-                <p class="text weekly-news-article__text"></p>
-                <footer class="weekly-news-article__footer">
-                  <time datetime="2018-10-07 7:00" class="publication-date">Oct 7</time>
-                  <span class="comments-number"><img src="" alt="comments" class="comment-icon">27</span><span
-                    class="likes-number"><img src="" alt="likes" class="like-icon">129</span>
-                </footer>
-              </div>
-            </article>
-            <!-- /.weekly-news-article -->
-            <hr>
-            <article class="weekly-news-article weekly-news__article">
-              <span class="label"><img class="label__icon" src="" alt="label"></span>
-              <div class="weekly-news-article__image"><img src="" alt=""></div>
-              <div>
-                <span class="subject">science</span>
-                <h3 class="title weekly-news-article__title"></h3>
-                <p class="text weekly-news-article__text"></p>
-                <footer class="weekly-news-article__footer">
-                  <time datetime="2018-10-11 12:00" class="publication-date">Oct 11</time>
-                  <span class="comments-number"><img src="" alt="comments" class="comment-icon">30</span><span
-                    class="likes-number"><img src="" alt="likes" class="like-icon">284</span>
-                </footer>
-              </div>
-            </article>
-            <!-- /.weekly-news-article -->
-            <hr>
-            <article class="weekly-news-article weekly-news__article">
-              <span class="label"><img class="label__icon" src="" alt="label"></span>
-              <div class="weekly-news-article__image"><img src="" alt=""></div>
-              <div>
-                <span class="subject">health</span>
-                <h3 class="title weekly-news-article__title"></h3>
-                <p class="text weekly-news-article__text"></p>
-                <footer class="weekly-news-article__footer">
-                  <time datetime="2018-10-19 15:00" class="publication-date">Oct 19</time>
-                  <span class="comments-number"><img src="" alt="comments" class="comment-icon">102</span><span
-                    class="likes-number"><img src="" alt="likes" class="like-icon">1,293</span>
-                </footer>
-              </div>
-            </article>
-            <!-- /.weekly-news-article -->
-            <hr>
-            <article class="weekly-news-article weekly-news__article">
-              <span class="label"><img class="label__icon" src="" alt="label"></span>
-              <div class="weekly-news-article__image"><img src="" alt=""></div>
-              <div>
-                <span class="subject">science</span>
-                <h3 class="title weekly-news-article__title"></h3>
-                <p class="text weekly-news-article__text"></p>
-                <footer class="weekly-news-article__footer">
-                  <time datetime="2018-10-22 11:00" class="publication-date">Oct 22</time>
-                  <span class="comments-number"><img src="" alt="comments" class="comment-icon">5</span><span
-                    class="likes-number"><img src="" alt="likes" class="like-icon">82</span>
-                </footer>
-              </div>
-            </article>
-            <!-- /.weekly-news-article -->
-            <hr>
-            <article class="weekly-news-article weekly-news__article">
-              <span class="label"><img class="label__icon" src="" alt="label"></span>
-              <div class="weekly-news-article__image"><img src="" alt=""></div>
-              <div>
-                <span class="subject">art & design</span>
-                <h3 class="title weekly-news-article__title"></h3>
-                <p class="text weekly-news-article__text"></p>
-                <footer class="weekly-news-article__footer">
-                  <time datetime="2018-10-26 19:00" class="publication-date">Oct 26</time>
-                  <span class="comments-number"><img src="" alt="comments" class="comment-icon">101</span><span
-                    class="likes-number"><img src="" alt="likes" class="like-icon">432</span>
-                </footer>
-              </div>
-            </article>
-            <!-- /.weekly-news-article -->
-          </div>
-          <!-- /.weekly-news__body -->
-          <aside class="weekly-news__aside weekly-news-aside">
-            <h3 class="weekly-news-aside__heading">columns</h3>
-            <ul class="weekly-news-aside__list">
-              <li class="weekly-news-aside__item">
-                <div class="weekly-news-aside__image"><img src="" alt=""></div>
-                <div>
-                  <p class="text weekly-news-aside__text"></p>
-                  <span class="publication-date">15 minuts ago</span>
-                </div>
-              </li>
-              <li class="weekly-news-aside__item">
-                <div class="weekly-news-aside__image"><img src="" alt=""></div>
-                <div>
-                  <p class="text weekly-news-aside__text"></p>
-                  <span class="publication-date">32 minuts ago</span>
-                </div>
-              </li>
-              <li class="weekly-news-aside__item">
-                <div class="weekly-news-aside__image"><img src="" alt=""></div>
-                <div>
-                  <p class="text weekly-news-aside__text"></p>
-                  <span class="publication-date">38 minuts ago</span>
-                </div>
-              </li>
-              <li class="weekly-news-aside__item">
-                <div class="weekly-news-aside__image"><img src="" alt=""></div>
-                <div>
-                  <p class="text weekly-news-aside__text"></p>
-                  <span class="publication-date">53 minuts ago</span>
-                </div>
-              </li>
-              <li class="weekly-news-aside__item">
-                <div class="weekly-news-aside__image"><img src="" alt=""></div>
-                <div>
-                  <p class="text weekly-news-aside__text"></p>
-                  <span class="publication-date">1 hour ago</span>
-                </div>
-              </li>
-              <li class="weekly-news-aside__item">
-                <div class="weekly-news-aside__image"><img src="" alt=""></div>
-                <div>
-                  <p class="text weekly-news-aside__text"></p>
-                  <span class="publication-date">1 hour ago</span>
-                </div>
-              </li>
-              <li class="weekly-news-aside__item">
-                <div class="weekly-news-aside__image"><img src="" alt=""></div>
-                <div>
-                  <p class="text weekly-news-aside__text"></p>
-                  <span class="publication-date">2 hours ago</span>
-                </div>
-              </li>
-            </ul>
-            <a href="#" class="more weekly-news-aside__more">Read more</a>
-          </aside>
-          <!-- /.weekly-news__aside -->
-        </section>
-        <!-- /.weekly-news -->
-      </div>
-      <!-- /.container -->
-      <section class="hot-news">
-        <div class="container">
-          <div class="hot-news-wrapper">
-            <div class="preview-block hot-news__preview">
-              <div class="preview-block__info">
-                <span class="subject">careers</span>
-                <h3 class="title preview-block__title">
-                  <a href="#"></a>
-                </h3>
-                <p class="text preview-block__text"></p>
-                <a href="#" class="button">Read more<img src="" alt=">" class="button__icon"></a>
-              </div>
-              <div class="preview-block__image"><img src="" alt="preview-block-image"></div>
-            </div>
-            <!-- /.preview-block -->
-            <a href="#">
-              <div class="common-news common-news_hot">
-                <h3 class="title common-news__title"></h3>
-                <p class="text common-news__text"></p>
-                <time datetime="2018-10-15 19:00" class="publication-date">Oct 15</time>
-              </div>
-            </a>
-            <!-- /.common-news -->
-            <a href="#">
-              <div class="common-news common-news_hot">
-                <h3 class="title common-news__title"></h3>
-                <p class="text common-news__text"></p>
-                <time datetime="2018-10-14 19:00" class="publication-date">Oct 14</time>
-              </div>
-            </a>
-            <!-- /.common-news -->
-          </div>
-          <!-- /.hot-news-wrapper -->
-        </div>
-        <!-- /.container -->
-      </section>
-      <!-- /.hot-news -->
-
-      <div class="subscription">
-        <div class="container">
-          <div class="subscription-wrapper">
-            <h2 class="heading subscription__heading"></h2>
-            <form action="#" class="subscription__form">
-              <input type="email" class="subscription__input" placeholder="Enter your email" required>
-              <button class="button subscription__button" type="submit">Subscribe</button>
-            </form>
-          </div>
-          <!-- /.subscription-wrapper -->
-        </div>
-        <!-- /.container -->
-      </div>
-      <!-- /.subscription -->
-    </main>
-
-    <hr class="hr hr_multicolored">
-
-    <!-- @import: "footer.html" -->
-  </div>
-  <!-- @import: "js.html" -->
+      <!-- @import: "js.html" -->
 </body>
 
 </html>
