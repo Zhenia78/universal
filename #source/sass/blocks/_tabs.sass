@@ -15,22 +15,40 @@
     &__subject
       margin: 0 0 25px 0
       color: #4592FF
+      text-shadow: 1px 1px 3px #000000
     &__heading
       width: 600px
       margin: 0 0 45px 0
+      text-shadow: 1px 1px 3px #000000
     &__additional-info
       display: flex
       align-items: center
     &__button
-      display: flex
-      align-items: center
-      height: 40px
-      padding: 0 20px 0 25px
       margin: 0 30px 0 0
     &.tab-active
       display: block
     &:nth-child(1)
       background-image: url(../img/tabs-img-1.jpg)
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: top center
+    &:nth-child(2)
+      background-image: url(../img/tabs-img-2.jpg)
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: top center
+    &:nth-child(3)
+      background-image: url(../img/tabs-img-3.jpg)
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: top center
+    &:nth-child(4)
+      background-image: url(../img/tabs-img-4.jpg)
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: top center
+    &:nth-child(5)
+      background-image: url(../img/tabs-img-5.png)
       background-repeat: no-repeat
       background-size: cover
       background-position: top center
@@ -50,16 +68,6 @@
   cursor: pointer
   &__title
     margin: 0 0 8px 0
-    &:nth-child(1)
-      color: #3BBDC4 !important
-    &:nth-child(2)
-      color: #6E99AE !important
-    &:nth-child(3)
-      color: #AC8EE3 !important
-    &:nth-child(4)
-      color: #FFA34D !important
-    &:nth-child(5)
-      color: #3DC47E !important
   &__description
     font-family: Lato, sans-serif
     font-weight: normal
@@ -87,6 +95,9 @@
 .video
   display: flex
   &__button
+    display: flex
+    align-items: center
+    justify-content: center
     margin: 0 10px 0 0
     width: 50px
     height: 50px
