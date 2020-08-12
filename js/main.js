@@ -14,6 +14,12 @@ $(document).ready(function () {
   });
 
 
+  $(".label").on("click", function () {
+    $(".label__icon").attr("src", "img/icons/bookmark.svg");
+    $("#" + $(this).attr("data-target")).attr("src", "img/icons/bookmark-active.svg");
+  });
+
+
   var swiper = new Swiper('.hot-news__swiper-container', {
     spaceBetween: 30,
     centeredSlides: true,

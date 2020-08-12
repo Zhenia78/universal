@@ -132,6 +132,13 @@
       padding: 25px 20px
       writing-mode: sideways-lr
       border-left: 1px solid #B4D1E0
+  .weekly-news
+    padding: 50px 0 45px 0
+    &-aside
+      display: none
+    &__body
+      margin: 0
+
   
 @media (max-width: 767px)
   .header
@@ -220,6 +227,28 @@
         border-right: none
       &:nth-child(2)
         display: none
+
+  
+  .weekly-news-article
+    display: flex
+    flex-direction: column
+    &__label
+      position: absolute
+      top: 25px
+      right: 0
+      &-1
+        top: 0
+    &__image
+      min-width: 0
+      width: 100%
+      margin: 0 0 25px 0
+    &-1
+      padding: 33px 0 25px 0
+    &-2,&-3,&-4,&-5
+      padding: 58px 0 25px 0
+    &-6
+      padding: 58px 0 0 0
+
 
 @media (max-width: 560px)
   .three-day-news
@@ -345,6 +374,29 @@
 
   .dropdown-menu
     padding: 81px 0 0 0
+
+  .headline-news
+    padding: 25px 0
+
+  .weekly-news
+    padding: 50px 0 30px 0
+    &__body
+      padding: 15px
+    &-article
+      &__label
+        position: absolute
+        top: 15px
+        &-1
+          top: 0
+      &__image
+        height: 215px
+        margin: 0 0 15px 0
+      &-1
+        padding: 33px 0 15px 0
+      &-2,&-3,&-4,&-5
+        padding: 48px 0 15px 0
+      &-6
+        padding: 48px 0 0 0
 
 @media (max-width: 440px)
   .todays-news

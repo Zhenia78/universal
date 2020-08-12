@@ -1,0 +1,93 @@
+.weekly-news
+  display: flex
+  align-items: flex-start
+  padding: 60px 0
+  &__body
+    display: flex
+    flex-direction: column
+    max-width: 848px
+    width: 100%
+    height: auto
+    margin: 0 30px 0 0
+    padding: 25px
+    border-radius: 10px
+    background: #ffffff
+
+.weekly-news-article
+  position: relative
+  display: flex
+  justify-content: space-between
+  &__label
+    position: absolute
+    right: 0
+    &:not(:first-child)
+      top: 25px
+      
+  &__image
+    min-width: 336px
+    height: 195px
+    margin: 0 25px 0 0
+    overflow: hidden
+  &__subject
+    margin: 0 0 15px 0
+  &__title
+    margin: 0 0 10px 0
+    font-size: 20px
+    &>a
+      color: #262D33
+  &__text
+    margin: 0 0 20px 0
+  &__footer
+    display: flex
+  &-1
+    padding: 0 0 25px 0
+  &-2,&-3,&-4,&-5
+    padding: 25px 0
+  &-6
+    padding: 25px 0 0 0
+  &__comments
+    margin: 0 10px 
+
+.label
+  width: 14px
+  height: 18px
+  overflow: hidden
+  cursor: pointer
+    
+.weekly-news-aside
+  max-width: 263px
+  height: auto
+  width: 100%
+  border-radius: 10px
+  background-color: #ffffff
+  &__heading
+    padding: 20px 25px
+    color: #262D33
+    border-bottom: 1px solid #D9DADB
+  &__list
+    padding: 17px 25px
+  &__item
+    display: flex
+    &-1
+      padding: 0 0 17px 0
+      border-bottom: 1px solid #D9DADB
+    &-2,&-3,&-4,&-5,&-6
+      padding: 17px 0
+      border-bottom: 1px solid #D9DADB
+    &-7
+      padding: 17px 0 0 0
+  &__image
+    margin: 0 10px 0 0
+    width: 60px
+    height: 60px
+    overflow: hidden
+
+  &__text
+    &>a
+      color: #4B5157
+
+  &__more
+    color: #262D33
+    border-top: 1px solid #D9DADB
+
+
