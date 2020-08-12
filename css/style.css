@@ -1486,7 +1486,7 @@ hr {
 }
 .weekly-news-aside__image {
   margin: 0 10px 0 0;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   overflow: hidden;
 }
