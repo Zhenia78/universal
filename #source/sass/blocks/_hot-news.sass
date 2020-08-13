@@ -1,0 +1,142 @@
+.hot-news
+  padding: 60px 0
+  background-color: #262D33
+  &__swiper
+    grid-area: 1 / 1 / 3 / 2
+    width: 100%
+    height: 100%
+    border-radius: 10px
+    overflow: hidden
+
+  &__swiper-container
+    width: 100%
+    height: 100%
+
+  &__swiper-slide
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 50px 30px 40px 30px
+    &>img
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      z-index: -10
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__author
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+    margin: 0 0 30px 0
+  &__avatar
+    width: 45px
+    height: 45px
+    overflow: hidden
+
+  &__heading
+    text-align: center
+    margin: 0 0 45px 0
+
+  &__photos
+    &-icon
+      margin: 0 10px 0 0
+    &-num
+      margin: 0 0 0 5px
+      font-family: Lato, sans-serif
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: #C5E4FC
+
+  &__preview
+    grid-area: 1 / 2 / 2 / 4
+
+  &__common-news
+    width: 100%
+    height: 100%
+    &-1
+      grid-area: 2 / 2 / 3 / 3
+    &-2
+      grid-area: 2 / 3 / 3 / 4
+
+
+.hot-news-wrapper
+  display: grid
+  grid-template-columns: 555px 263px 263px
+  grid-template-rows: 370px 170px
+  grid-gap: 30px
+
+
+.swiper-slide
+  &__hot-tag
+    position: absolute
+    top: 18px
+    left: 18px
+    padding: 5px 12px
+    font-family: Lato, sans-serif
+    font-weight: 800
+    font-size: 12px
+    line-height: 15px
+    text-align: center
+    color: #FFFFFF
+    background: #FF4F52
+    border-radius: 3px
+
+.preview-block
+  position: relative
+  display: flex
+  padding: 35px
+  background: #B4D1E0
+  border-radius: 10px
+  overflow: hidden
+  &__info 
+    position: relative
+    z-index: 10
+    max-width: 250px
+  &__subject
+    margin: 0 0 20px 0
+    color: #6E99AE
+  &__title
+    margin: 0 0 15px 0
+    font-size: 25px
+    line-height: 30px
+    &>a
+      color: #262D33
+  &__text
+    margin: 0 0 25px 0
+  &__image
+    position: absolute
+    top: 18px
+    right: 30px
+    z-index: 0
+    width: 275px
+    height: 100%
+    overflow: hidden
+
+
+.subject
+
+.title
+
+.text
+
+.tabs-block
+  &__button
+
+
+.common-news
+  &__title
+
+    &__text
+
+
+.publication-date
+
+
+

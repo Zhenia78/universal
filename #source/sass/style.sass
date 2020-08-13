@@ -74,6 +74,27 @@ body
 //</ОСНОВНАЯ СЕТКА>======================================================================================================
 
 //<ОСНОВНОЙ БЛОК>========================================================================================================
+.article-preview__wrapper, .article-wrapper
+  max-width: 946px
+  margin: 0 auto
+  width: 100%
+
+  @media (max-width: $md1+px)
+    max-width: 750px
+
+  @media (max-width: $md2+px)
+    max-width: 614px
+
+  @media (max-width: $md3+px)
+    max-width: 530px
+
+  @media (max-width: $md4+px)
+    max-width: 440px
+
+  @media (max-width: $md5+px)
+    max-width: none
+    padding: 0 20px
+
 .author
   display: flex
   &__avatar
@@ -161,6 +182,7 @@ hr
   font-family: Roboto-Slab, serif
   font-weight: bold
   font-size: 40px
+  letter-spacing: 0.5px
   line-height: 50px
   color: #FFFFFF
 
@@ -198,10 +220,19 @@ hr
   text-transform: uppercase
 
 .text
+  max-width: 556px
   font-family: Lato, sans-serif
   font-weight: normal
   font-size: 14px
   line-height: 20px
+  color: #4B5157
+
+.article-text
+  font-family: Lato, sans-serif
+  font-style: normal
+  font-weight: normal
+  font-size: 18px
+  line-height: 30px
   color: #4B5157
 
 .comments-number
@@ -252,6 +283,9 @@ hr
   line-height: 20px
   text-align: center
 
+a
+  color: inherit
+
 //</ОСНОВНОЙ БЛОК>=======================================================================================================
 
 //<ПОДКЛЮЧЕНИЯ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЕЛМЕНТОВ>=========================================================================
@@ -261,6 +295,9 @@ hr
 @import "blocks/_three-day-news.sass"
 @import "blocks/_headline-news.sass"
 @import "blocks/_weekly-news.sass"
+@import "blocks/_hot-news.sass"
+@import "blocks/_article-preview.sass"
+@import "blocks/_article.sass"
 @import "blocks/_footer.sass"
 @import "_media.sass"
 //</ПОДКЛЮЧЕНИЯ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЕЛМЕНТОВ>========================================================================
