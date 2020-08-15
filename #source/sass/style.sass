@@ -74,7 +74,7 @@ body
 //</ОСНОВНАЯ СЕТКА>======================================================================================================
 
 //<ОСНОВНОЙ БЛОК>========================================================================================================
-.article-preview__wrapper, .article-wrapper
+.article-preview__wrapper, .article-wrapper, .comments-container
   max-width: 946px
   margin: 0 auto
   width: 100%
@@ -164,7 +164,7 @@ hr
   grid-template-columns: repeat(6, 16.666%)
   width: 100%
   &__list
-    justify-self: center
+    justify-self: start
   &__title
     margin: 0 0 25px 0
     font-family: Lato, sans-serif
@@ -208,7 +208,7 @@ hr
   background: #4592FF
   border-radius: 20px
   &__icon
-    margin: 0 0 0 5px
+    margin: 0 0 0 7px
 
 .caption
   font-family: Lato
@@ -220,7 +220,6 @@ hr
   text-transform: uppercase
 
 .text
-  max-width: 556px
   font-family: Lato, sans-serif
   font-weight: normal
   font-size: 14px
@@ -298,6 +297,8 @@ a
 @import "blocks/_hot-news.sass"
 @import "blocks/_article-preview.sass"
 @import "blocks/_article.sass"
+@import "blocks/_similar-topics.sass"
+@import "blocks/_comments.sass"
 @import "blocks/_footer.sass"
 @import "_media.sass"
 //</ПОДКЛЮЧЕНИЯ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЕЛМЕНТОВ>========================================================================

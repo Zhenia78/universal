@@ -63,6 +63,13 @@
       margin: 0 20px 0 0
     &__author
       margin: -130px 0 0 0
+
+  .similar-topics
+    &-wrapper
+      flex-wrap: wrap
+    &__item
+      max-width: 48%
+      margin: 0 0 45px 0
   
 
 
@@ -197,6 +204,9 @@
       margin: 0 0 20px 0
     &__text
       margin: 0 0 20px 0
+    &__label
+      top: -43px
+      left: 0
 
   .article
     padding: 0 0 50px 0
@@ -206,6 +216,8 @@
       display: flex
       flex-direction: column-reverse
       align-items: center
+    &__body
+      margin: 0
     &__author
       margin: -28px 0 23px 0
     &-slider
@@ -220,6 +232,9 @@
           right: 43px
       &__author
         min-width: max-content
+    &__aside
+      display: none
+   
 
   .article-author
     width: 100%
@@ -228,8 +243,19 @@
       align-items: flex-start
       justify-content: space-between
       padding: 35px 30px 15px 30px
+
+  .similar-topics
+    padding: 35px 0
+
+  .comments
+    padding: 60px 0 30px 0
+  .comment
+    &-reply
+      padding: 20px 0 30px 0
   
 @media (max-width: 767px)
+  *, *:active
+    outline: none
   .header
     &__subscription
       display: none
@@ -378,6 +404,7 @@
       flex-basis: 100%
 
   .article
+    padding: 0 0 30px 0
     &-slider
       &__container
         height: 360px
@@ -390,12 +417,25 @@
         border-left: none
         border-top: 1px solid #D9DADB
         width: 100%
-      
+    &__comment
+      margin: 0 0 30px 0
+    &-comment
+      padding: 20px 0 0 20px
+      flex-direction: column
+      &::before
+        top: 0
+        left: 0
+      &__text
+        margin: 0 0 16px 0
+  
+  .comments
+    &__heading
+      & > span 
+        font-size: 30px
+        line-height: 40px
 
 
 @media (max-width: 560px)
-  *
-    outline: none
   .three-day-news
     grid-template-columns: 1fr
     grid-template-rows: auto 370px repeat(6, auto)
@@ -517,7 +557,7 @@
       flex-direction: column
       width: 100%
     &__input
-      margin: 0 0 15px 0
+      margin: 0 0 25px 0
       width: 100%
 
   .contacts-menu
@@ -525,7 +565,7 @@
       flex-basis: 50%   
 
   .article
-    padding: 0 0 40px 0
+    padding: 0 
     &__slider
       margin: 30px 0
     &__author
@@ -537,6 +577,21 @@
         margin: 0 0 20px 0
     &__title
       margin: 0 0 20px 0
+    &__topics
+      padding: 10px 0 0 0
+      margin: 0 0 30px 0
+    &-topics
+      justify-content: space-between
+      &__link
+        margin: 0
+    &__buttons
+      flex-wrap: wrap
+    &-support
+      &__button
+        display: inline-block
+        margin: 0 10px 15px 0
+        &:nth-child(2), &:last-child
+          margin: 0 0 15px 0
 
   .article-author
     width: 100%
@@ -544,6 +599,52 @@
       flex-direction: column
       align-items: center
       padding: 35px 15px
+
+  .similar-topics
+    &-wrapper
+      flex-direction: column
+    &__item
+      max-width: 100%
+      margin: 0 0 45px 0
+
+  .comments
+    padding: 45px 0 30px 0
+    &__header
+      flex-direction: column
+      margin: 0 0 20px 0
+    &__body
+      margin: 0 0 30px 0
+    &__heading
+      margin: 0 0 10px 0
+    &-form
+      display: flex
+      flex-direction: column
+      align-items: center
+      padding: 10px
+      &__wrapper
+        flex-direction: column
+        margin: 0 0 15px 0
+      &__avatar
+        margin: 0 0 15px 0
+      &__title
+        margin: 0 0 15px 0
+      &__button
+        margin: 0
+      &__textarea-block
+        &::after
+          display: none
+
+  .comment
+    flex-direction: column
+    padding: 20px 0
+    &__avatar
+      margin: 0 0 10px 0
+    &-reply
+      padding: 20px 0 30px 0
+
+  label.subscription__invalid 
+    left: 0
+    bottom: 47px
 
 
 @media (max-width: 480px)
@@ -640,6 +741,11 @@
       align-items: flex-start
     &__share-button
       margin: 25px 0 0 0
+    &__label
+      top: -30px
+      left: 20px
+      width: 19.6px
+      height: 25.2px
 
   .lead:first-letter
     padding: 13px 6px 0 0
@@ -661,6 +767,18 @@
           left: 10px
         &_next
           right: 10px
+    &-topics
+      justify-content: flex-start
+      flex-wrap: wrap
+      &__link
+        display: inline-block
+        margin: 0 10px 10px 0
+
+  .similar-topics
+    padding: 30px 0 10px 0
+    &__item
+      margin: 0 0 20px 0
+
 
 @media (max-width: 440px)
   .todays-news

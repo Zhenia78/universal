@@ -1,0 +1,164 @@
+.comments
+  padding: 90px 0 30px 0
+  &__header
+    display: flex
+    justify-content: space-between
+    margin: 0 0 30px 0
+  &__body
+    margin: 0 0 60px 0
+  &__heading
+    color: #262D33
+    & > span 
+      font-family: Lato, sans-serif
+      font-weight: normal
+      font-size: 40px
+      line-height: 50px
+      color: #939699
+  &__button
+    width: max-content
+    height: 40px
+    padding: 10px 25px 10px 20px
+    font-family: Lato, sans-serif
+    font-weight: 800
+    font-size: 14px
+    line-height: 20px
+    color: #262D33
+    border: 1px solid #D9DADB
+    border-radius: 20px
+  &__body
+  &__pencil-icon
+    margin: 0 10px 0 0
+  &__load-icon
+    margin: 0 7px 0 0
+  &__more-button
+    width: 100%
+    padding: 15px
+    border: 1px solid #D9DADB
+    border-radius: 25px
+    font-family: Lato, sans-serif
+    font-weight: 800
+    font-size: 14px
+    line-height: 20px
+    color: #262D33
+    &.load-active .comments__load-icon
+      animation: rotate360 0.5s linear 6 normal 0s forwards
+
+  &-form
+    padding: 30px 40px 35px 30px
+    background: #F5F5F5
+    border-radius: 10px
+    &__title
+      margin: 0 0 15px 96px
+      font-size: 20px
+    &__wrapper
+      display: flex
+      align-items: flex-start
+      width: 100%
+      margin: 0 0 15px 0
+    &__avatar
+      min-width: 75px
+      min-height: 75px
+      margin: 0 20px 0 0
+    &__textarea
+      display: block
+      height: 130px
+      width: 100%
+      padding: 15px
+      background: #FFFFFF
+      border: 1px solid #D9DADB
+      border-radius: 10px
+      resize: none
+      &-block
+        position: relative
+        width: 100%
+        &::after
+          content: ''
+          position: absolute
+          top: 28px
+          left: -9px
+          z-index: 20
+          width: 14.5px
+          height: 18px
+          background-image: url(../img/icons/textarea-arrow.svg)
+          background-repeat: no-repeat
+          background-position: center
+          background-size: 100% 100%
+    &__button
+      margin: 0 0 0 96px
+
+
+.comments-wrapper
+  max-width: 750px
+  width: 100%
+.comment
+  display: flex
+  padding: 20px 0 30px 0
+  &-hidden
+    display: none
+  &-visible
+    display: block
+  &-reply
+    padding: 20px 0 30px 90px
+  &__avatar
+    min-width: 75px
+    min-height: 75px
+    margin: 0 15px 0 0
+  &__hero
+    display: flex
+    align-items: center
+    margin: 0 0 10px 0
+  &__name
+    margin: 0 10px 0 0
+    font-family: Roboto Slab, serif
+    font-weight: bold
+    font-size: 16px
+    line-height: 25px
+    color: #262D33
+  &__text
+    margin: 0 0 15px 0
+    font-size: 18px
+    line-height: 30px
+  &__footer
+    display: flex
+    align-items: center
+  &__icon-reply
+    margin: 0 15px 0 0
+    font-family: Lato, sans-serif
+    font-weight: 800
+    font-size: 12px
+    line-height: 15px
+    color: #262D33
+  &__icon
+    margin: 0 5px 0 0
+  &__likes-button
+
+  &__dislikes-button
+
+.likes
+  &__counter
+    margin: 0 10px
+    font-family: Lato, sans-serif
+    font-weight: 800
+    font-size: 12px
+    line-height: 15px
+    color: #939699
+    &_green
+      color: #3DC47E
+    &_red
+      color: #FF4F52
+
+
+@keyframes rotate360
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(360deg)
+
+label.comments-form__invalid
+  font-family: Lato, sans-serif
+  font-weight: normal
+  font-size: 14px
+  line-height: 20px
+  color: red
+
+

@@ -15,8 +15,36 @@ $(document).ready(function () {
 
 
   $(".label").on("click", function () {
-    $(".label__icon").attr("src", "img/icons/bookmark.svg");
-    $("#" + $(this).attr("data-target")).attr("src", "img/icons/bookmark-active.svg");
+    if ($("#" + $(this).attr("data-target")).attr("src") == "img/icons/bookmark-active.svg") {
+      $("#" + $(this).attr("data-target")).attr("src", "img/icons/bookmark.svg");
+    } else {
+      $("#" + $(this).attr("data-target")).attr("src", "img/icons/bookmark-active.svg");
+    }
+  });
+
+  $("#load-more").click(function () {
+    $(this).toggleClass("load-active");
+    setTimeout(visible, 3000);
+
+    function visible() {
+      $(".comment-hidden").addClass("comment-visible");
+    }
+  });
+
+  $(".subscription__form").validate({
+    errorClass: "subscription__invalid",
+    email: {
+      required: "We need your email address",
+      email: "Invalid format"
+    }
+  });
+
+  $(".comments-form").validate({
+    errorClass: "comments-form__invalid",
+    messages: {
+      required: "Please enter your opinion",
+      comment: "Minimum number of characters 100"
+    }
   });
 
 

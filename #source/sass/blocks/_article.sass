@@ -10,12 +10,15 @@
     line-height: 30px
   &__body
     max-width: 623px
+    width: 100%
   &__paragraph
     &:not(:last-child)
       margin: 0 0 30px 0
   &__lead
     margin: 0 0 45px 0
   &__author
+    position: relative
+    z-index: 10
     margin: -160px 0 0 0
   &__slider
     margin: 60px 0 45px 0
@@ -65,6 +68,144 @@
       & .author__subtitle
         color: #939699
         opacity: 1
+  &__comment
+    margin: 0 0 45px 0
+  &-comment
+    position: relative
+    display: flex
+    justify-content: space-between
+    padding: 15px 0 0 0
+    &::before
+      content: ''
+      position: absolute
+      top: -5px
+      left: -20px
+      width: 70px
+      height: 70px
+      z-index: -1
+      opacity: 0.25
+      background-image: url(../img/icons/Quote.svg)
+      background-position: center
+      background-size: 100% 100%
+      background-repeat: no-repeat
+    &__author
+      flex-direction: column
+      min-width: max-content
+      & .author__name
+        color: #4B5157
+        opacity: 1
+      & .author__subtitle
+        color: #939699
+        opacity: 1
+    &__avatar
+      margin: 0 0 10px 0
+    &__text
+      max-width: 458px
+      margin: 0 30px 0 0
+      font-size: 25px
+      line-height: 30px
+  &-aside
+    max-width: 263px
+    width: 100%
+    &__heading
+      margin: 0 0 20px 0
+      font-size: 20px
+      line-height: 25px
+    &__image
+      width: 100%
+      height: 180px
+      margin: 0 0 15px 0
+      border-radius: 10px
+    &__title
+      margin: 0 0 5px 0
+    &__text
+      margin: 0 0 20px 0
+    &__footer
+      display: flex
+      align-items: center
+    &__views-number
+      margin: 0 10px 0 0
+  &__topics
+    padding: 15px 0 0 0
+    margin: 0 0 60px 0
+  &-topics
+    display: flex
+    align-items: center
+    &__link
+      margin: 0 10px 0 0
+      padding: 5px 15px
+      font-family: Lato, sans-serif
+      font-weight: 800
+      font-size: 14px
+      line-height: 20px
+      text-align: center
+      color: #262D33
+      border: 1px solid #D9DADB
+      border-radius: 5px
+  &__footer
+    padding: 30px 0
+  &__buttons
+    display: flex
+    align-items: center
+  &-support
+    &__heading
+      margin: 0 0 25px 0
+      font-size: 25px
+      line-height: 30px
+    &__button
+      display: flex
+      align-items: center
+      flex-wrap: nowrap
+      height: 40px
+      margin: 0 10px 0 0
+      font-family: Lato, sans-serif
+      font-weight: 800
+      font-size: 14px
+      line-height: 20px
+      color: #FFFFFF
+      border-radius: 20px
+      &:last-child
+        margin: 0
+    &__icon
+      margin: 0 10px 0 0
+      vertical-align: text-bottom
+    &__text
+      padding: 0 0 2px 0
+      margin: 0 0 0 5px
+      font-weight: normal
+      line-height: 0
+      color: #ffffff
+      opacity: 0.6
+
+.facebook-support
+  padding: 10px 25px 10px 20px
+  background: #4267B2
+.like-support
+  padding: 10px 25px 10px 20px
+  background: #FF4F52
+.twitter-support
+  padding: 10px 25px 10px 20px
+  background: #1DA1F2
+
+.all
+  width: 40px
+  height: 40px
+  border: 1px solid #D9DADB
+  border-radius: 50%
+  background-image: url(../img/icons/dots.svg)
+  background-position: center
+  background-repeat: no-repeat
+    
+.views
+  &-icon
+    margin: 0 5px 0 0
+    vertical-align: middle
+  &-number
+    font-family: Lato, sans-serif
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    color: #939699
 
 .lead
   word-spacing: 3.5px

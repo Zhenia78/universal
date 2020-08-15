@@ -2,8 +2,8 @@
   <div class="container">
     <div class="subscription footer__subscription">
       <h2 class="heading subscription__heading">Subscribe now and get 20% off</h2>
-      <form action="#" class="subscription__form">
-        <input type="email" class="subscription__input" placeholder="Enter your email" required>
+      <form action="send.php" method="POST" class="subscription__form">
+        <input type="email" name="email" class="subscription__input" placeholder="Enter your email" required>
         <button class="button subscription__button" type="submit">Subscribe</button>
       </form>
     </div>
@@ -76,7 +76,7 @@
     <!-- /.footer__menu -->
     <hr>
     <div class="footer-row">
-      <div class="footer__logo"><img src="img/icons/footer-logo.svg" alt="logo"></div>
+      <div class="footer__logo"><img class="fit-img" src="img/icons/footer-logo.svg" alt="logo"></div>
       <ul class="contacts-menu footer__contacts-menu">
         <li class="contacts-menu__item"><a href="#" class="contacts-menu__link">contact us</a></li>
         <li class="contacts-menu__item"><a href="#" class="contacts-menu__link">work with us</a></li>
@@ -84,10 +84,14 @@
         <li class="contacts-menu__item"><a href="#" class="contacts-menu__link">your ad choise</a></li>
       </ul>
       <div class="socials footer__socials">
-        <a href="#" class="socials__link"><img src="img/facebook-social.jpg" alt="facebook"></a>
-        <a href="#" class="socials__link"><img src="img/twitter-social.jpg" alt="twitter"></a>
-        <a href="#" class="socials__link"><img src="img/youtube-social.jpg" alt="youtube"></a>
-        <a href="#" class="socials__link"><img src="img/instagram-social.jpg" alt="instagram"></a>
+        <a target="_blank" href="https://uk-ua.facebook.com/" class="socials__link"><img src="img/facebook-social.jpg"
+            alt="facebook"></a>
+        <a target="_blank" href="https://twitter.com/?lang=uk" class="socials__link"><img src="img/twitter-social.jpg"
+            alt="twitter"></a>
+        <a target="_blank" href="https://www.youtube.com/" class="socials__link"><img src="img/youtube-social.jpg"
+            alt="youtube"></a>
+        <a target="_blank" href="https://www.instagram.com/" class="socials__link"><img src="img/instagram-social.jpg"
+            alt="instagram"></a>
       </div>
     </div>
     <!-- /.footer-row -->
