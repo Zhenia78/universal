@@ -74,6 +74,9 @@
 
 
 @media (max-width: 992px)
+  .menu
+    &__list
+      justify-self: center
   .heading
     font-size: 30px
     line-height: 40px
@@ -134,8 +137,9 @@
     &__heading
       padding: 25px 20px
       text-align: center
-      writing-mode: sideways-lr
-      border-right: 1px solid #B4D1E0
+      writing-mode: vertical-lr
+      border-left: 1px solid #B4D1E0
+      transform: rotate(180deg)
     &__list
       display: flex
       padding: 25px 27px
@@ -155,8 +159,9 @@
     &__more
       border-top: none
       padding: 25px 20px
-      writing-mode: sideways-lr
-      border-left: 1px solid #B4D1E0
+      writing-mode: vertical-lr
+      border-right: 1px solid #B4D1E0
+      transform: rotate(180deg)
   .weekly-news
     padding: 50px 0 45px 0
     &-aside
@@ -254,8 +259,10 @@
       padding: 20px 0 30px 0
   
 @media (max-width: 767px)
-  *, *:active
-    outline: none
+  *, *:hover
+    outline: none !important
+    -webkit-tap-highlight-color: rgba(0,0,0,0)
+    -webkit-tap-highlight-color: transparent
   .header
     &__subscription
       display: none
@@ -485,7 +492,8 @@
       padding: 20px 25px
       writing-mode: horizontal-tb
       border-bottom: 1px solid #B4D1E0
-      border-right: none
+      border-left: none
+      transform: rotate(0)
     &__list
       flex-direction: column
       padding: 45px 25px 45px 35px
@@ -512,6 +520,8 @@
       writing-mode: horizontal-tb
       border-top: 1px solid #B4D1E0
       color: #FFFFFF
+      border-right: none
+      transform: rotate(0)
 
   .preview-block
     &__info

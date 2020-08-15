@@ -239,10 +239,22 @@
 .swiper-container-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-  bottom: 10px;
+  bottom: 44px;
   left: 0;
   width: 100%
 }
+
+@media (max-width: 992px) {
+
+  .swiper-container-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+  }
+}
+
 
 .swiper-pagination-bullets-dynamic {
   overflow: hidden;
@@ -329,7 +341,7 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 4px
+  margin: 0 9.1px;
 }
 
 .swiper-container-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
