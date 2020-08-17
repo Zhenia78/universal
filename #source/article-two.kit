@@ -22,18 +22,18 @@
       <section class="article-preview article-preview-two">
         <div class="article-preview__wrapper">
           <div class="article-preview__header">
-            <span data-target="l-8" class="label article-preview__label"><img loading="lazy" id="l-8" class="fit-img label__icon"
-                src="img/icons/bookmark.svg" alt="label"></span>
+            <span data-target="l-8" class="label article-preview__label"><img loading="lazy" id="l-8"
+                class="fit-img label__icon" src="img/icons/bookmark.svg" alt="label"></span>
             <span class="subject article-preview__subject">destinations</span>
             <div class="switches article-preview__switches">
               <a href="index.html" class="article-preview__home">
                 <img loading="lazy" class="article-preview__home-icon" src="img/icons/home.svg" alt="home">
                 Back to main
               </a>
-              <a href="article-one.html" class="article-preview__prev"><img loading="lazy" class="article-preview__prev-icon"
-                  src="img/icons/prev-article-arrow.svg" alt="&lt;">Prev</a>
-              <a href="article-three.html" class="article-preview__next">Next<img loading="lazy" class="article-preview__next-icon"
-                  src="img/icons/next-article-arrow.svg" alt="&gt;"></a>
+              <a href="article-one.html" class="article-preview__prev"><img loading="lazy"
+                  class="article-preview__prev-icon" src="img/icons/prev-article-arrow.svg" alt="&lt;">Prev</a>
+              <a href="article-three.html" class="article-preview__next">Next<img loading="lazy"
+                  class="article-preview__next-icon" src="img/icons/next-article-arrow.svg" alt="&gt;"></a>
             </div>
           </div>
           <!-- /.article-preview__header -->
@@ -48,13 +48,13 @@
                 <img loading="lazy" class="clock-icon" src="img/icons/clock.svg" alt="time:">
                 <time class="publication-date" datetime="2018-08-06 10:23">Aug 6, 10:23 pm</time>
               </div>
-              <button class="likes-number article-preview__likes-number"><img loading="lazy" src="img/icons/like-icon-light.svg"
-                  alt="likes" class="like-icon">830</button>
+              <button class="likes-number article-preview__likes-number"><img loading="lazy"
+                  src="img/icons/like-icon-light.svg" alt="likes" class="like-icon">830</button>
               <button class="comments-number article-preview__comments-number"><img loading="lazy"
                   src="img/icons/comment-icon-light.svg" alt="comments" class="comment-icon">19</button>
             </div>
-            <button class="share-button article-preview__share-button"><img loading="lazy" src="img/icons/share-icon.svg"
-                alt="&rarr;">142 shares</button>
+            <button class="share-button article-preview__share-button"><img loading="lazy"
+                src="img/icons/share-icon.svg" alt="&rarr;">142 shares</button>
           </div>
         </div>
         <!-- /.article-preview__wrapper -->
@@ -91,7 +91,8 @@
 
           <aside class="article__author article-author">
             <div class="article-author__wrapper">
-              <div class="avatar article-author__avatar"><img loading="lazy" class="fit-img" src="img/user-1.jpg" alt="Author:Mira">
+              <div class="avatar article-author__avatar"><img loading="lazy" class="fit-img" src="img/user-1.jpg"
+                  alt="Author:Mira">
               </div>
               <div class="article-author__info">
                 <h3 class="article-author__name">Benjamin Turner</h3>
@@ -119,12 +120,24 @@
             <div class="article-slider__wrapper">
               <div class="swiper-container article-slider__container">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide article-slider__slide"><img loading="lazy" class="fit-img" src="img/slide-1.jpg"
-                      alt="slide-img"></div>
-                  <div class="swiper-slide article-slider__slide"><img loading="lazy" class="fit-img" src="img/slide-2.jpg"
-                      alt="slide-img"></div>
-                  <div class="swiper-slide article-slider__slide"><img loading="lazy" class="fit-img" src="img/slide-3.jpg"
-                      alt="slide-img"></div>
+                  <div class="swiper-slide article-slider__slide">
+                    <picture>
+                      <source class="fit-img" media="(max-width: 560px)" srcset="img/slide-1-small.jpg">
+                      <img loading="lazy" class="fit-img" src="img/slide-1.jpg" alt="slide-img">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide article-slider__slide">
+                    <picture>
+                      <source class="fit-img" media="(max-width: 560px)" srcset="img/slide-2-small.jpg">
+                      <img loading="lazy" class="fit-img" src="img/slide-2.jpg" alt="slide-img">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide article-slider__slide">
+                    <picture>
+                      <source class="fit-img" media="(max-width: 560px)" srcset="img/slide-3-small.jpg">
+                      <img loading="lazy" class="fit-img" src="img/slide-3.jpg" alt="slide-img">
+                    </picture>
+                  </div>
                 </div>
 
                 <!-- Add Arrows -->
@@ -138,7 +151,8 @@
                   application of statistical methodology</p>
                 <div class="article-slider__author">
                   <div class="author">
-                    <div class="avatar author__avatar"><img loading="lazy" class="fit-img" src="img/user-7.jpg" alt="author"></div>
+                    <div class="avatar author__avatar"><img loading="lazy" class="fit-img" src="img/user-7.jpg"
+                        alt="author"></div>
                     <div>
                       <h4 class="author__name">Andrew Washington</h4>
                       <span class="author__subtitle">Photographer</span>
@@ -178,7 +192,8 @@
                 full of them would not, in itself, constitute anyone a geographer. Geography has higher aims than this:
                 it seeks to classify phenomena.</p>
               <div class="author article-comment__author">
-                <div class="avatar article-comment__avatar"><img loading="lazy" class="fit-img" src="img/user-8.jpg" alt="William">
+                <div class="avatar article-comment__avatar"><img loading="lazy" class="fit-img" src="img/user-8.jpg"
+                    alt="William">
                 </div>
                 <h4 class="author__name">William Peterson</h4>
                 <span class="author__subtitle">Travel Agent</span>
@@ -208,14 +223,14 @@
             <footer class="article__footer article-support">
               <h3 class="title article-support__heading">Show Your Support</h3>
               <div class="article__buttons">
-                <a href="#" class="article-support__button like-support"><img loading="lazy" class="article-support__icon"
-                    src="img/icons/Heart.svg" alt="Heart">Like
+                <a href="#" class="article-support__button like-support"><img loading="lazy"
+                    class="article-support__icon" src="img/icons/Heart.svg" alt="Heart">Like
                   it <span class="text article-support__text">42</span></a>
-                <a href="#" class="article-support__button facebook-support"><img loading="lazy" class="article-support__icon"
-                    src="img/icons/Facebook.svg" alt="Facebook">Share <span
+                <a href="#" class="article-support__button facebook-support"><img loading="lazy"
+                    class="article-support__icon" src="img/icons/Facebook.svg" alt="Facebook">Share <span
                     class="text article-support__text">80</span></a>
-                <a href="#" class="article-support__button twitter-support"><img loading="lazy" class="article-support__icon"
-                    src="img/icons/Twitter.svg" alt="Twitter">Tweet <span
+                <a href="#" class="article-support__button twitter-support"><img loading="lazy"
+                    class="article-support__icon" src="img/icons/Twitter.svg" alt="Twitter">Tweet <span
                     class="text article-support__text">33</span></a>
                 <button class="all article-support__button"></button>
               </div>
@@ -225,17 +240,18 @@
 
           <aside class="article-aside article__aside">
             <h3 class="title article-aside__heading">Material on Theme</h3>
-            <div class="article-aside__image"><img loading="lazy" src="img/article-aside-image.jpg" alt="img" class="fit-img"></div>
+            <div class="article-aside__image"><img loading="lazy" src="img/article-aside-image.jpg" alt="img"
+                class="fit-img"></div>
             <h4 class="title article-aside__title">Application of Postcolonial Theory in the Middle East</h4>
             <p class="text article-aside__text">In the essays "Overstating the Arab State", by Nazih Ayubi, and "Is
               Jordan
               Palestine?", by Raphael Israel, the authors deal with the psychologically fragmented postcolonial
               identity.</p>
             <div class="article-aside__footer">
-              <span class="views-number article-aside__views-number"><img loading="lazy" src="img/icons/view-icon.svg" alt="comments"
-                  class="views-icon">1623</span>
-              <button class="comments-number article-aside__comments-number"><img loading="lazy" src="img/icons/comment-icon.svg"
-                  alt="comments" class="comment-icon">102</button>
+              <span class="views-number article-aside__views-number"><img loading="lazy" src="img/icons/view-icon.svg"
+                  alt="comments" class="views-icon">1623</span>
+              <button class="comments-number article-aside__comments-number"><img loading="lazy"
+                  src="img/icons/comment-icon.svg" alt="comments" class="comment-icon">102</button>
             </div>
           </aside>
           <!-- /.article-author -->
@@ -247,50 +263,54 @@
         <div class="container">
           <div class="similar-topics-wrapper">
             <div class="similar-topics__item">
-              <div class="similar-topics__image"><img loading="lazy" src="img/similar-topics-img-1.jpg" alt="img" class="fit-img">
+              <div class="similar-topics__image"><img loading="lazy" src="img/similar-topics-img-1.jpg" alt="img"
+                  class="fit-img">
               </div>
               <h3 class="title similar-topics__title">An Evangelist of Singaporean Food Has a New Pulpit</h3>
               <div class="similar-topics__row">
-                <span class="views-number similar-topics__views-number"><img loading="lazy" src="img/icons/view-icon.svg"
-                    alt="comments" class="views-icon">1,904</span>
-                <button class="comments-number similar-topics__comments-number"><img loading="lazy" src="img/icons/comment-icon.svg"
-                    alt="comments" class="comment-icon">82</button>
+                <span class="views-number similar-topics__views-number"><img loading="lazy"
+                    src="img/icons/view-icon.svg" alt="comments" class="views-icon">1,904</span>
+                <button class="comments-number similar-topics__comments-number"><img loading="lazy"
+                    src="img/icons/comment-icon.svg" alt="comments" class="comment-icon">82</button>
               </div>
             </div>
             <!-- /.similar-topics__item -->
             <div class="similar-topics__item">
-              <div class="similar-topics__image"><img loading="lazy" src="img/similar-topics-img-2.jpg" alt="img" class="fit-img">
+              <div class="similar-topics__image"><img loading="lazy" src="img/similar-topics-img-2.jpg" alt="img"
+                  class="fit-img">
               </div>
               <h3 class="title similar-topics__title">At the Mouth of the Mississippi, a Weird and Fragile Beauty</h3>
               <div class="similar-topics__row">
-                <span class="views-number similar-topics__views-number"><img loading="lazy" src="img/icons/view-icon.svg"
-                    alt="comments" class="views-icon">2,837</span>
-                <button class="comments-number similar-topics__comments-number"><img loading="lazy" src="img/icons/comment-icon.svg"
-                    alt="comments" class="comment-icon">982</button>
+                <span class="views-number similar-topics__views-number"><img loading="lazy"
+                    src="img/icons/view-icon.svg" alt="comments" class="views-icon">2,837</span>
+                <button class="comments-number similar-topics__comments-number"><img loading="lazy"
+                    src="img/icons/comment-icon.svg" alt="comments" class="comment-icon">982</button>
               </div>
             </div>
             <!-- /.similar-topics__item -->
             <div class="similar-topics__item">
-              <div class="similar-topics__image"><img loading="lazy" src="img/similar-topics-img-3.jpg" alt="img" class="fit-img">
+              <div class="similar-topics__image"><img loading="lazy" src="img/similar-topics-img-3.jpg" alt="img"
+                  class="fit-img">
               </div>
               <h3 class="title similar-topics__title">Chattanooga Is Changing. But Its Charms Remain.</h3>
               <div class="similar-topics__row">
-                <span class="views-number similar-topics__views-number"><img loading="lazy" src="img/icons/view-icon.svg"
-                    alt="comments" class="views-icon">821</span>
-                <button class="comments-number similar-topics__comments-number"><img loading="lazy" src="img/icons/comment-icon.svg"
-                    alt="comments" class="comment-icon">30</button>
+                <span class="views-number similar-topics__views-number"><img loading="lazy"
+                    src="img/icons/view-icon.svg" alt="comments" class="views-icon">821</span>
+                <button class="comments-number similar-topics__comments-number"><img loading="lazy"
+                    src="img/icons/comment-icon.svg" alt="comments" class="comment-icon">30</button>
               </div>
             </div>
             <!-- /.similar-topics__item -->
             <div class="similar-topics__item">
-              <div class="similar-topics__image"><img loading="lazy" src="img/similar-topics-img-4.jpg" alt="img" class="fit-img">
+              <div class="similar-topics__image"><img loading="lazy" src="img/similar-topics-img-4.jpg" alt="img"
+                  class="fit-img">
               </div>
               <h3 class="title similar-topics__title">How to Get by in a Country if You Don’t Know the Language</h3>
               <div class="similar-topics__row">
-                <span class="views-number similar-topics__views-number"><img loading="lazy" src="img/icons/view-icon.svg"
-                    alt="comments" class="views-icon">5,030</span>
-                <button class="comments-number similar-topics__comments-number"><img loading="lazy" src="img/icons/comment-icon.svg"
-                    alt="comments" class="comment-icon">495</button>
+                <span class="views-number similar-topics__views-number"><img loading="lazy"
+                    src="img/icons/view-icon.svg" alt="comments" class="views-icon">5,030</span>
+                <button class="comments-number similar-topics__comments-number"><img loading="lazy"
+                    src="img/icons/comment-icon.svg" alt="comments" class="comment-icon">495</button>
               </div>
             </div>
             <!-- /.similar-topics__item -->
@@ -308,14 +328,15 @@
               <h2 class="heading comments__heading">
                 Comments <span>19</span>
               </h2>
-              <button class="comments__button"><img loading="lazy" class="comments__pencil-icon" src="img/icons/pencil-icon.svg"
-                  alt="Pen">Add comment</button>
+              <button class="comments__button"><img loading="lazy" class="comments__pencil-icon"
+                  src="img/icons/pencil-icon.svg" alt="Pen">Add comment</button>
             </div>
             <!-- /.comments__header -->
             <div class="comments__body">
               <hr>
               <div class="comment">
-                <div class="avatar comment__avatar"><img loading="lazy" class="fit-img" src="img/user-7.jpg" alt="Ryan"></div>
+                <div class="avatar comment__avatar"><img loading="lazy" class="fit-img" src="img/user-7.jpg" alt="Ryan">
+                </div>
                 <div>
                   <div class="comment__hero">
                     <h3 class="comment__name">Ryan Hall</h3>
@@ -325,20 +346,21 @@
                     sovereign
                     states were brought in from the outside, tailored to suit colonial interests and commitments</p>
                   <div class="comment__footer">
-                    <button class="comment__icon-reply"><img loading="lazy" src="img/icons/comment-icon.svg" alt="comments"
-                        class="comment__icon comment-icon">Reply</button>
-                    <button class="comment__likes-button"><img loading="lazy" src="img/icons/like-finger-icon.svg" alt="likes"
-                        class="like-icon"></button>
+                    <button class="comment__icon-reply"><img loading="lazy" src="img/icons/comment-icon.svg"
+                        alt="comments" class="comment__icon comment-icon">Reply</button>
+                    <button class="comment__likes-button"><img loading="lazy" src="img/icons/like-finger-icon.svg"
+                        alt="likes" class="like-icon"></button>
                     <span class="comment__likes-counter comment__likes-counter_green">+10</span>
-                    <button class="comment__dislikes-button"><img loading="lazy" src="img/icons/dislike-icon.svg" alt="likes"
-                        class="like-icon"></button>
+                    <button class="comment__dislikes-button"><img loading="lazy" src="img/icons/dislike-icon.svg"
+                        alt="likes" class="like-icon"></button>
                   </div>
                 </div>
               </div>
               <!-- /.comment -->
               <hr>
               <div class="comment comment-reply">
-                <div class="avatar comment__avatar"><img loading="lazy" class="fit-img" src="img/user-5.jpg" alt="Lora"></div>
+                <div class="avatar comment__avatar"><img loading="lazy" class="fit-img" src="img/user-5.jpg" alt="Lora">
+                </div>
                 <div>
                   <div class="comment__hero">
                     <h3 class="comment__name">Lora Morrow</h3>
@@ -348,20 +370,21 @@
                     could
                     protect and safeguard imperial interests in the post-withdrawal phase</p>
                   <div class="comment__footer">
-                    <button class="comment__icon-reply"><img loading="lazy" src="img/icons/comment-icon.svg" alt="comments"
-                        class="comment__icon comment-icon">Reply</button>
-                    <button class="comment__likes-button"><img loading="lazy" src="img/icons/like-finger-icon.svg" alt="likes"
-                        class="like-icon"></button>
+                    <button class="comment__icon-reply"><img loading="lazy" src="img/icons/comment-icon.svg"
+                        alt="comments" class="comment__icon comment-icon">Reply</button>
+                    <button class="comment__likes-button"><img loading="lazy" src="img/icons/like-finger-icon.svg"
+                        alt="likes" class="like-icon"></button>
                     <span class="comment__likes-counter">0</span>
-                    <button class="comment__dislikes-button"><img loading="lazy" src="img/icons/dislike-icon.svg" alt="likes"
-                        class="like-icon"></button>
+                    <button class="comment__dislikes-button"><img loading="lazy" src="img/icons/dislike-icon.svg"
+                        alt="likes" class="like-icon"></button>
                   </div>
                 </div>
               </div>
               <!-- /.comment -->
               <hr>
               <div class="comment">
-                <div class="avatar comment__avatar"><img loading="lazy" class="fit-img" src="img/user-9.jpg" alt="Tara"></div>
+                <div class="avatar comment__avatar"><img loading="lazy" class="fit-img" src="img/user-9.jpg" alt="Tara">
+                </div>
                 <div>
                   <div class="comment__hero">
                     <h3 class="comment__name">Tara Stark</h3>
@@ -371,20 +394,21 @@
                     Cochinchina, Cambodia and Laos. Cochinchina was the first territory under French Control. Saigon was
                     conquired in 1859. Then, in 1887, the Indochinese Union was established.</p>
                   <div class="comment__footer">
-                    <button class="comment__icon-reply"><img loading="lazy" src="img/icons/comment-icon.svg" alt="comments"
-                        class="comment__icon comment-icon">Reply</button>
-                    <button class="comment__likes-button"><img loading="lazy" src="img/icons/like-finger-icon.svg" alt="likes"
-                        class="like-icon"></button>
+                    <button class="comment__icon-reply"><img loading="lazy" src="img/icons/comment-icon.svg"
+                        alt="comments" class="comment__icon comment-icon">Reply</button>
+                    <button class="comment__likes-button"><img loading="lazy" src="img/icons/like-finger-icon.svg"
+                        alt="likes" class="like-icon"></button>
                     <span class="comment__likes-counter comment__likes-counter_red">-3</span>
-                    <button class="comment__dislikes-button"><img loading="lazy" src="img/icons/dislike-icon.svg" alt="likes"
-                        class="like-icon"></button>
+                    <button class="comment__dislikes-button"><img loading="lazy" src="img/icons/dislike-icon.svg"
+                        alt="likes" class="like-icon"></button>
                   </div>
                 </div>
               </div>
               <!-- /.comment -->
               <hr>
               <div class="comment">
-                <div class="avatar comment__avatar"><img loading="lazy" class="fit-img" src="img/user-10.jpg" alt="Kris"></div>
+                <div class="avatar comment__avatar"><img loading="lazy" class="fit-img" src="img/user-10.jpg"
+                    alt="Kris"></div>
                 <div>
                   <div class="comment__hero">
                     <h3 class="comment__name">Kris Robertson</h3>
@@ -394,20 +418,21 @@
                     logics
                     of Postcolonial Theory in his book Postcolonial Theory and the Specter of Capital</p>
                   <div class="comment__footer">
-                    <button class="comment__icon-reply"><img loading="lazy" src="img/icons/comment-icon.svg" alt="comments"
-                        class="comment__icon comment-icon">Reply</button>
-                    <button class="comment__likes-button"><img loading="lazy" src="img/icons/like-finger-icon.svg" alt="likes"
-                        class="like-icon"></button>
+                    <button class="comment__icon-reply"><img loading="lazy" src="img/icons/comment-icon.svg"
+                        alt="comments" class="comment__icon comment-icon">Reply</button>
+                    <button class="comment__likes-button"><img loading="lazy" src="img/icons/like-finger-icon.svg"
+                        alt="likes" class="like-icon"></button>
                     <span class="comment__likes-counter">0</span>
-                    <button class="comment__dislikes-button"><img loading="lazy" src="img/icons/dislike-icon.svg" alt="likes"
-                        class="like-icon"></button>
+                    <button class="comment__dislikes-button"><img loading="lazy" src="img/icons/dislike-icon.svg"
+                        alt="likes" class="like-icon"></button>
                   </div>
                 </div>
               </div>
               <!-- /.comment -->
               <hr class="comment-hidden">
               <div class="comment comment-hidden">
-                <div class="avatar comment__avatar"><img loading="lazy" class="fit-img" src="img/user-2.jpg" alt="Sarah"></div>
+                <div class="avatar comment__avatar"><img loading="lazy" class="fit-img" src="img/user-2.jpg"
+                    alt="Sarah"></div>
                 <div>
                   <div class="comment__hero">
                     <h3 class="comment__name">Sarah Jenkins</h3>
@@ -421,20 +446,21 @@
                     tempora in nemo eius adipisci sequi ea temporibus nulla distinctio optio eum similique error, ipsum
                     vitae iste suscipit nesciunt?</p>
                   <div class="comment__footer">
-                    <button class="comment__icon-reply"><img loading="lazy" src="img/icons/comment-icon.svg" alt="comments"
-                        class="comment__icon comment-icon">Reply</button>
-                    <button class="comment__likes-button"><img loading="lazy" src="img/icons/like-finger-icon.svg" alt="likes"
-                        class="like-icon"></button>
+                    <button class="comment__icon-reply"><img loading="lazy" src="img/icons/comment-icon.svg"
+                        alt="comments" class="comment__icon comment-icon">Reply</button>
+                    <button class="comment__likes-button"><img loading="lazy" src="img/icons/like-finger-icon.svg"
+                        alt="likes" class="like-icon"></button>
                     <span class="comment__likes-counter comment__likes-counter_red">-1</span>
-                    <button class="comment__dislikes-button"><img loading="lazy" src="img/icons/dislike-icon.svg" alt="likes"
-                        class="like-icon"></button>
+                    <button class="comment__dislikes-button"><img loading="lazy" src="img/icons/dislike-icon.svg"
+                        alt="likes" class="like-icon"></button>
                   </div>
                 </div>
               </div>
               <!-- /.comment -->
               <hr class="comment-hidden">
               <div class="comment comment-hidden">
-                <div class="avatar comment__avatar"><img loading="lazy" class="fit-img" src="img/user-4.jpg" alt="Alexandra"></div>
+                <div class="avatar comment__avatar"><img loading="lazy" class="fit-img" src="img/user-4.jpg"
+                    alt="Alexandra"></div>
                 <div>
                   <div class="comment__hero">
                     <h3 class="comment__name">Alexandra Green</h3>
@@ -446,20 +472,21 @@
                     iure architecto quae eveniet aspernatur, ullam enim. Deleniti omnis labore provident tempore
                     inventore eos. Exercitationem, qui.</p>
                   <div class="comment__footer">
-                    <button class="comment__icon-reply"><img loading="lazy" src="img/icons/comment-icon.svg" alt="comments"
-                        class="comment__icon comment-icon">Reply</button>
-                    <button class="comment__likes-button"><img loading="lazy" src="img/icons/like-finger-icon.svg" alt="likes"
-                        class="like-icon"></button>
+                    <button class="comment__icon-reply"><img loading="lazy" src="img/icons/comment-icon.svg"
+                        alt="comments" class="comment__icon comment-icon">Reply</button>
+                    <button class="comment__likes-button"><img loading="lazy" src="img/icons/like-finger-icon.svg"
+                        alt="likes" class="like-icon"></button>
                     <span class="comment__likes-counter comment__likes-counter_green">+5</span>
-                    <button class="comment__dislikes-button"><img loading="lazy" src="img/icons/dislike-icon.svg" alt="likes"
-                        class="like-icon"></button>
+                    <button class="comment__dislikes-button"><img loading="lazy" src="img/icons/dislike-icon.svg"
+                        alt="likes" class="like-icon"></button>
                   </div>
                 </div>
               </div>
               <!-- /.comment -->
               <hr class="comment-hidden">
               <div class="comment comment-hidden">
-                <div class="avatar comment__avatar"><img loading="lazy" class="fit-img" src="img/user-3.jpg" alt="David"></div>
+                <div class="avatar comment__avatar"><img loading="lazy" class="fit-img" src="img/user-3.jpg"
+                    alt="David"></div>
                 <div>
                   <div class="comment__hero">
                     <h3 class="comment__name">David Williams</h3>
@@ -475,13 +502,13 @@
                     reprehenderit, molestiae tenetur? Iste culpa voluptate possimus nemo, tempora animi nesciunt ipsum
                     necessitatibus nostrum perspiciatis.</p>
                   <div class="comment__footer">
-                    <button class="comment__icon-reply"><img loading="lazy" src="img/icons/comment-icon.svg" alt="comments"
-                        class="comment__icon comment-icon">Reply</button>
-                    <button class="comment__likes-button"><img loading="lazy" src="img/icons/like-finger-icon.svg" alt="likes"
-                        class="like-icon"></button>
+                    <button class="comment__icon-reply"><img loading="lazy" src="img/icons/comment-icon.svg"
+                        alt="comments" class="comment__icon comment-icon">Reply</button>
+                    <button class="comment__likes-button"><img loading="lazy" src="img/icons/like-finger-icon.svg"
+                        alt="likes" class="like-icon"></button>
                     <span class="comment__likes-counter">0</span>
-                    <button class="comment__dislikes-button"><img loading="lazy" src="img/icons/dislike-icon.svg" alt="likes"
-                        class="like-icon"></button>
+                    <button class="comment__dislikes-button"><img loading="lazy" src="img/icons/dislike-icon.svg"
+                        alt="likes" class="like-icon"></button>
                   </div>
                 </div>
               </div>
@@ -495,13 +522,14 @@
               <form action="send.php" method="POST" class="comments-form comments__form">
                 <h3 class="title comments-form__title">What do you think?</h3>
                 <div class="comments-form__wrapper">
-                  <div class="avatar comments-form__avatar"><img loading="lazy" src="img/user-4.jpg" alt="User" class="fit-img"></div>
+                  <div class="avatar comments-form__avatar"><img loading="lazy" src="img/user-4.jpg" alt="User"
+                      class="fit-img"></div>
                   <div class="comments-form__textarea-block">
                     <textarea class="comments-form__textarea text" minlength="100" name="comment" required></textarea>
                   </div>
                 </div>
-                <button class="button comments-form__button" type="submit">Submit<img loading="lazy" src="img/icons/more-arrow.svg"
-                    alt="&gt;" class="button__icon"></button>
+                <button class="button comments-form__button" type="submit">Submit<img loading="lazy"
+                    src="img/icons/more-arrow.svg" alt="&gt;" class="button__icon"></button>
               </form>
             </div>
             <!-- /.comments__footer -->

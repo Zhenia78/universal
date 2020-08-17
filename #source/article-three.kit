@@ -119,12 +119,24 @@
             <div class="article-slider__wrapper">
               <div class="swiper-container article-slider__container">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide article-slider__slide"><img loading="lazy" class="fit-img" src="img/slide-1.jpg"
-                      alt="slide-img"></div>
-                  <div class="swiper-slide article-slider__slide"><img loading="lazy" class="fit-img" src="img/slide-2.jpg"
-                      alt="slide-img"></div>
-                  <div class="swiper-slide article-slider__slide"><img loading="lazy" class="fit-img" src="img/slide-3.jpg"
-                      alt="slide-img"></div>
+                  <div class="swiper-slide article-slider__slide">
+                    <picture>
+                      <source class="fit-img" media="(max-width: 560px)" srcset="img/slide-1-small.jpg">
+                      <img loading="lazy" class="fit-img" src="img/slide-1.jpg" alt="slide-img">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide article-slider__slide">
+                    <picture>
+                      <source class="fit-img" media="(max-width: 560px)" srcset="img/slide-2-small.jpg">
+                      <img loading="lazy" class="fit-img" src="img/slide-2.jpg" alt="slide-img">
+                    </picture>
+                  </div>
+                  <div class="swiper-slide article-slider__slide">
+                    <picture>
+                      <source class="fit-img" media="(max-width: 560px)" srcset="img/slide-3-small.jpg">
+                      <img loading="lazy" class="fit-img" src="img/slide-3.jpg" alt="slide-img">
+                    </picture>
+                  </div>
                 </div>
 
                 <!-- Add Arrows -->
