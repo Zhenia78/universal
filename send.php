@@ -51,7 +51,7 @@ else {$result = "error";}
 }
 
 // Отображение результата
-header("Location:" . $_SERVER["HTTP_REFERER"]);
+header("Location: thankyou.php");
 } elseif(isset($comment)) {
     // Формирование самого письма
 $title = "Новое обращение";
@@ -95,5 +95,5 @@ else {$result = "error";}
 }
 
 // Отображение результата
-header("Location:" . $_SERVER["HTTP_REFERER"]);
+header("Location: thankyou.php");
 }

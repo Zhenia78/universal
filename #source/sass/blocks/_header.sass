@@ -11,6 +11,9 @@
       display: none
     &__search
       margin: 0 auto 0 25px
+      width: 60%
+      & > .search__input
+        width: 100%
   &__subscription
     display: flex
     justify-content: space-between
@@ -66,9 +69,6 @@
   &__title, &__item > a
     color: #ffffff
   
-
-
-
 .burger
   display: flex
   justify-content: space-between
@@ -168,7 +168,6 @@
     margin: 0 11px 0 0
     overflow: auto
   &__input
-    width: 60px
     font-weight: normal
     font-size: 14px
     line-height: 20px
@@ -179,7 +178,6 @@
       padding: 10px 15px
       border: 1px solid #EDEFF0 
       border-radius: 6px
-      width: min-content
 
 .initial-subscription
   &__image
@@ -265,7 +263,11 @@
     &-text
       color: #FFFFFF
   &__search
-    margin: 0 0 24px 0
+    margin: 0 0 24px 
+    & > .search__input
+      width: 60px
+      &:focus
+        width: min-content
   &.menu-active
     visibility: visible
     opacity: 1

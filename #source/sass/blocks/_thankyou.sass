@@ -1,0 +1,58 @@
+.thank-you 
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  text-align: center
+  padding: 10px 0 50px 0
+  &__heading 
+    margin: 0 0 15px 0
+    font-family: sans-serif
+    font-weight: bold
+    font-size: 144px
+    line-height: 175px
+    letter-spacing: -30px
+    color: #262626
+    & > span
+      text-shadow: -8px 0 0 #ffffff
+  &__button
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    height: 54px
+    min-width: 154px
+    font-family: sans-serif
+    font-weight: bold
+    font-size: 18px
+    line-height: 22px
+    letter-spacing: 1px
+    color: #FFFFFF
+    border-radius: 10px
+    background: #000000
+
+
+@media only screen and (max-width: 767px) 
+  .thank-you
+    &__heading
+      font-size: 85px
+      line-height: 95px
+      letter-spacing: -15px
+      & > span
+        text-shadow: -5px 0 0 #ffffff
+    &__button
+      height: 40px
+      min-width: 120px
+      font-size: 14px
+  
+@media only screen and (max-width: 480px) 
+  .thank-you
+    &__heading
+      font-size: 50px
+      line-height: 60px
+      letter-spacing: -10px
+      & > span
+        text-shadow: -3px 0 0 #ffffff
+
+
+
+
