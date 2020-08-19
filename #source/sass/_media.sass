@@ -75,11 +75,12 @@
       margin: 0 0 45px 0
   
 
-
 @media (max-width: 992px)
   .menu
+    justify-items: center
     &__list
-      justify-self: center
+      max-width: 120px
+      width: 100%
   .heading
     font-size: 30px
     line-height: 40px
@@ -107,6 +108,16 @@
     &__menu
       padding: 0 0 30px 0
 
+  .footer__list:nth-child(2)
+    margin: 0
+  .footer__list:nth-child(3)
+    margin: 0
+  .footer__list:nth-child(4)
+    margin: 0
+  .footer__list:nth-child(5)
+    margin: 0
+  .footer__list:nth-child(6)
+    margin: 0
 
   .tabs
     height: 483px
@@ -246,8 +257,7 @@
         min-width: max-content
     &__aside
       display: none
-   
-
+  
   .article-author
     width: 100%
     &__wrapper
@@ -299,7 +309,7 @@
       width: 61px
 
   .todays-news
-    height: auto
+    height: 683px
     padding: 30px 0
     &__wrapper
       flex-wrap: wrap
@@ -322,7 +332,51 @@
         padding: 13px 23px 0 23px !important
       
   .tabs
-    display: none
+    flex-direction: column-reverse
+    height: auto
+    &_initial
+      margin: -184px 0 0 0
+    &-block
+      width: 100%
+      height: 455px
+    &-items
+      display: flex
+      flex-direction: column
+      &__recommendation
+        border-bottom: 1px solid #D9DADB
+      &__list
+        display: flex
+    &-item
+      display: flex
+      flex-direction: column-reverse
+      align-items: center
+      justify-content: flex-start
+      width: 25%
+      padding: 13px 25px 19px 25px
+      border-bottom: none
+      border-right: 1px solid #D9DADB
+      &__title
+        margin: 5px 0 0 0
+        writing-mode: vertical-rl
+        transform: rotate(180deg)
+      &:nth-child(1)
+        border-top: none
+        border-left: 1px solid #D9DADB
+      &:nth-child(5)
+        border-right: none
+      &__description
+        display: none
+      &.tab-active
+        &::before
+          top: auto
+          bottom: -12px
+          left: 50%
+          transform: translate(-50%, 0) rotate(-90deg)
+
+  .video
+    &-icon
+      &_hidden
+        display: block
 
   .three-day-news
     display: grid
@@ -450,6 +504,14 @@
 
 
 @media (max-width: 560px)
+  .tabs
+    &-block
+      height: 400px
+      &__information
+        margin: 60px 0 0 0
+  .video__information
+    display: none
+
   .three-day-news
     grid-template-columns: 1fr
     grid-template-rows: auto 370px repeat(6, auto)
@@ -710,6 +772,28 @@
   .dropdown-menu
     padding: 81px 0 0 0
 
+  
+
+  .tabs
+    &_initial
+      margin: -172px 0 0 0
+    &-block
+      height: 200px
+      padding: 24px 10px 10px 10px
+      &__author
+        display: none
+      &__information
+        margin: 0
+      &__subject
+        margin: 0 0 7px 0
+        font-size: 10px
+      &__heading
+        margin: 0 0 15px 0
+        font-size: 20px
+        line-height: 25px
+    &-item
+      padding: 10px
+
   .headline-news
     padding: 25px 0
 
@@ -799,7 +883,6 @@
 
 @media (max-width: 440px)
   .todays-news
-    height: auto
     &__wrapper
       width: 100%
 
@@ -808,7 +891,6 @@
       &__text
         width: 100px
 
-  
   .hot-news
     &-wrapper
       grid-template-columns: 1fr

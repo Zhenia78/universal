@@ -46,10 +46,10 @@
       <!-- /.todays-news -->
 
       <div class="container">
-        <section class="tabs">
+        <section class="tabs tabs_initial">
           <div class="tabs-body">
             <div id="tab-1" class="tabs__block tabs-block tab-active">
-              <div class="author tabs-block-author">
+              <div class="author tabs-block-author tabs-block__author">
                 <div class="avatar author__avatar"><img loading="lazy" class="fit-img" src="img/user-1.jpg" alt="img">
                 </div>
                 <div>
@@ -61,12 +61,12 @@
                 <span class="subject tabs-block__subject">destinations</span>
                 <h2 class="heading tabs-block__heading">In Southeast England, White Cliffs and Fish</h2>
                 <div class="tabs-block__additional-info">
-                  <a href="article-one.html" class="button tabs-block__button">Read more<img loading="lazy"
+                  <a href="article-one.html" class="button btnhover tabs-block__button">Read more<img loading="lazy"
                       src="img/icons/more-arrow.svg" alt="&gt;" class="button__icon"></a>
                   <div class="video">
                     <a data-fancybox href="https://youtu.be/e8QKBu-qAPA" class="video__button"><img loading="lazy"
                         src="img/icons/play.svg" alt="img"></a>
-                    <div>
+                    <div class="video__information">
                       <h3 class="video__title">The chalk cliff of Beachy Head</h3>
                       <span class="video__time">18:05</span>
                     </div>
@@ -76,7 +76,7 @@
             </div>
             <!-- /.tabs-block -->
             <div id="tab-2" class="tabs__block tabs-block">
-              <div class="author tabs-block-author">
+              <div class="author tabs-block-author tabs-block__author">
                 <div class="avatar author__avatar"><img loading="lazy" class="fit-img" src="img/user-2.jpg" alt="img">
                 </div>
                 <div>
@@ -88,14 +88,14 @@
                 <span class="subject tabs-block__subject">destinations</span>
                 <h2 class="heading tabs-block__heading">Storm Has Car Dealers Doing Swift Business</h2>
                 <div class="tabs-block__additional-info">
-                  <a href="article-one.html" class="button tabs-block__button">Read more<img loading="lazy"
+                  <a href="article-one.html" class="button btnhover tabs-block__button">Read more<img loading="lazy"
                       src="img/icons/more-arrow.svg" alt="&gt;" class="button__icon"></a>
                 </div>
               </div>
             </div>
             <!-- /.tabs-block -->
             <div id="tab-3" class="tabs__block tabs-block">
-              <div class="author tabs-block-author">
+              <div class="author tabs-block-author tabs-block__author">
                 <div class="avatar author__avatar"><img loading="lazy" class="fit-img" src="img/user-3.jpg" alt="img">
                 </div>
                 <div>
@@ -107,14 +107,14 @@
                 <span class="subject tabs-block__subject">destinations</span>
                 <h2 class="heading tabs-block__heading">War Is Hell? In New Military Dramas</h2>
                 <div class="tabs-block__additional-info">
-                  <a href="article-one.html" class="button tabs-block__button">Read more<img loading="lazy"
+                  <a href="article-one.html" class="button btnhover tabs-block__button">Read more<img loading="lazy"
                       src="img/icons/more-arrow.svg" alt="&gt;" class="button__icon"></a>
                 </div>
               </div>
             </div>
             <!-- /.tabs-block -->
             <div id="tab-4" class="tabs__block tabs-block">
-              <div class="author tabs-block-author">
+              <div class="author tabs-block-author tabs-block__author">
                 <div class="avatar author__avatar"><img loading="lazy" class="fit-img" src="img/user-4.jpg" alt="img">
                 </div>
                 <div>
@@ -126,7 +126,7 @@
                 <span class="subject tabs-block__subject">destinations</span>
                 <h2 class="heading tabs-block__heading">11 surprising stat rankings for active NFL players</h2>
                 <div class="tabs-block__additional-info">
-                  <a href="article-one.html" class="button tabs-block__button">Read more<img loading="lazy"
+                  <a href="article-one.html" class="button btnhover tabs-block__button">Read more<img loading="lazy"
                       src="img/icons/more-arrow.svg" alt="&gt;" class="button__icon"></a>
                   <div class="video">
                     <a data-fancybox href="https://youtu.be/zLRVCx0V5Cs" class="video__button"><img loading="lazy"
@@ -141,7 +141,7 @@
             </div>
             <!-- /.tabs-block -->
             <div id="tab-5" class="tabs__block tabs-block">
-              <div class="author tabs-block-author">
+              <div class="author tabs-block-author tabs-block__author">
                 <div class="avatar author__avatar"><img loading="lazy" class="fit-img" src="img/user-5.jpg" alt="img">
                 </div>
                 <div>
@@ -153,7 +153,7 @@
                 <span class="subject tabs-block__subject">destinations</span>
                 <h2 class="heading tabs-block__heading">The bookcases you can buy online and assemble yourself</h2>
                 <div class="tabs-block__additional-info">
-                  <a href="article-one.html" class="button tabs-block__button">Read more<img loading="lazy"
+                  <a href="article-one.html" class="button btnhover tabs-block__button">Read more<img loading="lazy"
                       src="img/icons/more-arrow.svg" alt="&gt;" class="button__icon"></a>
                 </div>
               </div>
@@ -166,10 +166,11 @@
             <ul class="tabs-items__list">
               <li data-target="tab-1" class="tabs-item tab-active">
                 <span class="subject subject_light-blue tabs-item__title">food</span>
-                <p class="text tabs-item__description">
+                <p class="text tabs-item__description tabs-item__description_one">
                   For Chicken-Fried Steak, Too Much Is Just Enough
                   <img loading="lazy" src="img/icons/play-button.svg" alt="play">
                 </p>
+                <img class="video-icon video-icon_hidden" loading="lazy" src="img/icons/play-button.svg" alt="play">
               </li>
               <li data-target="tab-2" class="tabs-item">
                 <span class="subject subject_blue tabs-item__title">cars</span>
@@ -181,10 +182,11 @@
               </li>
               <li data-target="tab-4" class="tabs-item">
                 <span class="subject subject_orange tabs-item__title">nfl</span>
-                <p class="text tabs-item__description">
+                <p class="text tabs-item__description tabs-item__description_two">
                   11 surprising stat rankings for active NFL players
                   <img loading="lazy" src="img/icons/play-button.svg" alt="play">
                 </p>
+                <img class="video-icon video-icon_hidden" loading="lazy" src="img/icons/play-button.svg" alt="play">
               </li>
               <li data-target="tab-5" class="tabs-item">
                 <span class="subject subject_green tabs-item__title">tech reviews</span>
@@ -200,7 +202,7 @@
           <div class="first-news three-day-news__first-news">
             <div class="first-news__info">
               <span class="subject first-news__subject">cars</span>
-              <h3 class="title first-news__title">
+              <h3 class="title btnhover first-news__title">
                 <a href="#">The joy of replicas: A $ 5 million car for $ 50,000</a>
               </h3>
               <p class="text first-news__text">The 31-year-old self-taught engineer and former amateur racer spends
@@ -226,7 +228,8 @@
             <div class="secondary-news__popular-tag">Popular</div>
             <div class="secondary-news__info">
               <span class="subject secondary-news__subject">art & design</span>
-              <h3 class="title secondary-news__title"><a href="#">Invisible ink: the weird world of tattoo removal –
+              <h3 class="title btnhover secondary-news__title"><a href="#">Invisible ink: the weird world of tattoo
+                  removal –
                   in pictures</a></h3>
               <a href="#">
                 <div class="secondary-news-comment">
@@ -251,7 +254,8 @@
           <a class="three-day-news__third-news" href="#">
             <figure class="third-news">
               <img loading="lazy" class="fit-img third-news__image" src="img/third-news-img.jpg" alt="third-news-image">
-              <figcaption class="title third-news__title">200+ Doomed Cats Saved From Euthanization</figcaption>
+              <figcaption class="title btnhover third-news__title">200+ Doomed Cats Saved From Euthanization
+              </figcaption>
             </figure>
           </a>
           <!-- /.third-news -->
@@ -266,18 +270,18 @@
           <!-- /.common-news -->
           <a class="common-news three-day-news__common-news-2" href="#">
             <div>
-              <h3 class="title common-news__title">It’s a Stressful World</h3>
-              <p class="text common-news__text">Can a cruise skeptic enjoy four days on the seas with his family and a
-                bunch of princesses?</p>
+              <h3 class="title common-news__title">What We Manufacture</h3>
+              <p class="text common-news__text">A global history of the factory and the modern world that all should
+                read</p>
               <time datetime="2018-10-14 19:00" class="publication-date">Oct 14</time>
             </div>
           </a>
           <!-- /.common-news -->
           <a class="common-news three-day-news__common-news-3" href="#">
             <div>
-              <h3 class="title common-news__title">What We Manufacture</h3>
-              <p class="text common-news__text">A global history of the factory and the modern world that all should
-                read</p>
+              <h3 class="title common-news__title">It’s a Stressful World</h3>
+              <p class="text common-news__text">Can a cruise skeptic enjoy four days on the seas with his family and a
+                bunch of princesses?</p>
               <time datetime="2018-10-14 19:00" class="publication-date">Oct 14</time>
             </div>
           </a>
@@ -295,7 +299,8 @@
             <h3 class="caption news-column__heading">columns</h3>
             <ul class="news-column__list">
               <li class="news-column__item">
-                <h3 class="title news-column__title"><a href="#">Architecture is the thoughtful making of space</a></h3>
+                <h3 class="title btnhover news-column__title"><a href="#">Architecture is the thoughtful making of
+                    space</a></h3>
                 <div class="author">
                   <div class="avatar author__avatar"><img loading="lazy" class="fit-img" src="img/user-3.jpg"
                       alt="David"></div>
@@ -306,7 +311,7 @@
                 </div>
               </li>
               <li class="news-column__item">
-                <h3 class="title news-column__title"><a href="#">The details are not the details. They make the
+                <h3 class="title btnhover news-column__title"><a href="#">The details are not the details. They make the
                     design.</a>
                 </h3>
                 <div class="author">
@@ -319,7 +324,8 @@
                 </div>
               </li>
               <li class="news-column__item">
-                <h3 class="title news-column__title"><a href="#">Live life to the fullest, and focus on the positive</a>
+                <h3 class="title btnhover news-column__title"><a href="#">Live life to the fullest, and focus on the
+                    positive</a>
                 </h3>
                 <div class="author">
                   <div class="avatar author__avatar"><img loading="lazy" class="fit-img" src="img/user-5.jpg" alt="img">
@@ -344,8 +350,8 @@
           <div class="headline-news-wrapper">
             <h1 class="heading headline-news__heading">The Big Bloom or «How Flowering
               Plants Changed the World»</h1>
-            <a href="article-one.html" class="button">Read more<img loading="lazy" src="img/icons/more-arrow.svg"
-                alt="&gt;" class="button__icon"></a>
+            <a href="article-one.html" class="button btnhover">Read more<img loading="lazy"
+                src="img/icons/more-arrow.svg" alt="&gt;" class="button__icon"></a>
           </div>
           <!-- /.headline-news-wrapper -->
         </div>
@@ -357,14 +363,16 @@
         <div class="weekly-news">
           <div class="weekly-news__body">
             <article class="weekly-news-article weekly-news-article-1 weekly-news__article">
-              <span data-target="l-1" class="label weekly-news-article__label weekly-news-article__label-1"><img
-                  loading="lazy" id="l-1" class="fit-img label__icon" src="img/icons/bookmark.svg" alt="label"></span>
+              <span data-target="l-1"
+                class="label btnhover weekly-news-article__label weekly-news-article__label-1"><img loading="lazy"
+                  id="l-1" class="fit-img label__icon" src="img/icons/bookmark.svg" alt="label"></span>
               <div class="weekly-news-article__image"><img loading="lazy" class="fit-img"
                   src="img/weekly-article-img-1.jpg" alt="img">
               </div>
               <div>
                 <span class="subject subject_blue weekly-news-article__subject">flights</span>
-                <h3 class="title weekly-news-article__title"><a href="#">Passengers Suffer as Crowded Field Puts
+                <h3 class="title weekly-news-article__title"><a href="#">Passengers Suffer as Crowded Field
+                    Puts
                     Pressure on
                     Europe’s Airlines</a></h3>
                 <p class="text weekly-news-article__text">Weaker carriers have fallen by the wayside amid fierce
@@ -381,14 +389,15 @@
             <!-- /.weekly-news-article -->
             <hr>
             <article class="weekly-news-article weekly-news-article-2 weekly-news__article">
-              <span data-target="l-2" class="label weekly-news-article__label"><img loading="lazy" id="l-2"
+              <span data-target="l-2" class="label btnhover weekly-news-article__label"><img loading="lazy" id="l-2"
                   class="fit-img label__icon" src="img/icons/bookmark.svg" alt="label"></span>
               <div class="weekly-news-article__image"><img loading="lazy" class="fit-img"
                   src="img/weekly-article-img-2.jpg" alt="img">
               </div>
               <div>
                 <span class="subject subject_light-blue weekly-news-article__subject">food</span>
-                <h3 class="title weekly-news-article__title"><a href="#">Three Courses, 20 Euros: The Affordable Dining
+                <h3 class="title weekly-news-article__title"><a href="#">Three Courses, 20 Euros: The
+                    Affordable Dining
                     Renaissance in Paris</a></h3>
                 <p class="text weekly-news-article__text">The Los Angeles area, for all of its culinary diversity, has
                   not historically been thought of as a haven for bread lovers. The area has a reputation as a place
@@ -405,16 +414,17 @@
             <!-- /.weekly-news-article -->
             <hr>
             <article class="weekly-news-article weekly-news-article-3 weekly-news__article">
-              <span data-target="l-3" class="label weekly-news-article__label"><img loading="lazy" id="l-3"
+              <span data-target="l-3" class="label btnhover weekly-news-article__label"><img loading="lazy" id="l-3"
                   class="fit-img label__icon" src="img/icons/bookmark.svg" alt="label"></span>
               <div class="weekly-news-article__image"><img loading="lazy" class="fit-img"
                   src="img/weekly-article-img-3.jpg" alt="img">
               </div>
               <div>
                 <span class="subject subject_red weekly-news-article__subject">science</span>
-                <h3 class="title weekly-news-article__title"><a href="#">Watch the High-Flying Physics of a Plant’s
+                <h3 class="title weekly-news-article__title"><a href="#">Watch the High-Flying Physics of a
+                    Plant’s
                     Exploding
-                    Fruits</a>></h3>
+                    Fruits</a></h3>
                 <p class="text weekly-news-article__text">Three undergradute physics majors and their professor worked
                   out how the hairyflower wild petunia shoots tiny seeds more than 20 feet through the air</p>
                 <footer class="weekly-news-article__footer">
@@ -429,7 +439,7 @@
             <!-- /.weekly-news-article -->
             <hr>
             <article class="weekly-news-article weekly-news-article-4 weekly-news__article">
-              <span data-target="l-4" class="label weekly-news-article__label"><img loading="lazy" id="l-4"
+              <span data-target="l-4" class="label btnhover weekly-news-article__label"><img loading="lazy" id="l-4"
                   class="fit-img label__icon" src="img/icons/bookmark.svg" alt="label"></span>
               <div class="weekly-news-article__image"><img loading="lazy" class="fit-img"
                   src="img/weekly-article-img-4.jpg" alt="img">
@@ -453,14 +463,15 @@
             <!-- /.weekly-news-article -->
             <hr>
             <article class="weekly-news-article weekly-news-article-5 weekly-news__article">
-              <span data-target="l-5" class="label weekly-news-article__label"><img loading="lazy" id="l-5"
+              <span data-target="l-5" class="label btnhover weekly-news-article__label"><img loading="lazy" id="l-5"
                   class="fit-img label__icon" src="img/icons/bookmark.svg" alt="label"></span>
               <div class="weekly-news-article__image"><img loading="lazy" class="fit-img"
                   src="img/weekly-article-img-5.jpg" alt="img">
               </div>
               <div>
                 <span class="subject subject_red weekly-news-article__subject">science</span>
-                <h3 class="title weekly-news-article__title"><a href="#">Forests Protect the Climate. A Future With More
+                <h3 class="title weekly-news-article__title"><a href="#">Forests Protect the Climate. A Future
+                    With More
                     Storms
                     Would Mean Trouble.</a></h3>
                 <p class="text weekly-news-article__text">With an increase in extreme weather expected in the years to
@@ -477,14 +488,15 @@
             <!-- /.weekly-news-article -->
             <hr>
             <article class="weekly-news-article weekly-news-article-6 weekly-news__article">
-              <span data-target="l-6" class="label weekly-news-article__label"><img loading="lazy" id="l-6"
+              <span data-target="l-6" class="label btnhover weekly-news-article__label"><img loading="lazy" id="l-6"
                   class="fit-img label__icon" src="img/icons/bookmark.svg" alt="label"></span>
               <div class="weekly-news-article__image"><img loading="lazy" class="fit-img"
                   src="img/weekly-article-img-6.jpg" alt="img">
               </div>
               <div>
                 <span class="subject subject_violet weekly-news-article__subject">art & design</span>
-                <h3 class="title weekly-news-article__title"><a href="#">New Contemporary Institute Reverberates in
+                <h3 class="title weekly-news-article__title"><a href="#">New Contemporary Institute
+                    Reverberates in
                     Richmond’s
                     Historic Landscape</a></h3>
                 <p class="text weekly-news-article__text">The center, which will open in April, takes a bold look at
@@ -588,7 +600,7 @@
                       </div>
                     </div>
                     <h2 class="heading hot-news__heading">Readers' Choice winners: Your wine country favorites</h2>
-                    <a href="#" class="button"><img loading="lazy" class="hot-news__photos-icon"
+                    <a href="#" class="button btnhover"><img loading="lazy" class="hot-news__photos-icon"
                         src="img/icons/photo-icon.svg" alt="icon">Watch photos <span
                         class="hot-news__photos-num">26</span></a>
                   </div>
@@ -604,7 +616,7 @@
                       </div>
                     </div>
                     <h2 class="heading hot-news__heading">Readers' Choice winners: Your wine country favorites</h2>
-                    <a href="#" class="button"><img loading="lazy" class="hot-news__photos-icon"
+                    <a href="#" class="button btnhover"><img loading="lazy" class="hot-news__photos-icon"
                         src="img/icons/photo-icon.svg" alt="icon">Watch photos <span
                         class="hot-news__photos-num">10</span></a>
                   </div>
@@ -620,7 +632,7 @@
                       </div>
                     </div>
                     <h2 class="heading hot-news__heading">Readers' Choice winners: Your wine country favorites</h2>
-                    <a href="#" class="button"><img loading="lazy" class="hot-news__photos-icon"
+                    <a href="#" class="button btnhover"><img loading="lazy" class="hot-news__photos-icon"
                         src="img/icons/photo-icon.svg" alt="icon">Watch photos <span
                         class="hot-news__photos-num">16</span></a>
                   </div>
@@ -636,7 +648,7 @@
                       </div>
                     </div>
                     <h2 class="heading hot-news__heading">Readers' Choice winners: Your wine country favorites</h2>
-                    <a href="#" class="button"><img loading="lazy" class="hot-news__photos-icon"
+                    <a href="#" class="button btnhover"><img loading="lazy" class="hot-news__photos-icon"
                         src="img/icons/photo-icon.svg" alt="icon">Watch photos <span
                         class="hot-news__photos-num">20</span></a>
                   </div>
@@ -652,7 +664,7 @@
                       </div>
                     </div>
                     <h2 class="heading hot-news__heading">Readers' Choice winners: Your wine country favorites</h2>
-                    <a href="#" class="button"><img loading="lazy" class="hot-news__photos-icon"
+                    <a href="#" class="button btnhover"><img loading="lazy" class="hot-news__photos-icon"
                         src="img/icons/photo-icon.svg" alt="icon">Watch photos <span
                         class="hot-news__photos-num">15</span></a>
                   </div>
@@ -670,8 +682,8 @@
                 </h3>
                 <p class="text preview-block__text">Try to understand the culture of the company where you want to work
                   and be authentic in your interview, experts emphasize</p>
-                <a href="#" class="button">Read more<img loading="lazy" src="img/icons/more-arrow.svg" alt="&gt;"
-                    class="button__icon"></a>
+                <a href="#" class="button btnhover">Read more<img loading="lazy" src="img/icons/more-arrow.svg"
+                    alt="&gt;" class="button__icon"></a>
               </div>
               <div class="preview-block__image"><img loading="lazy" class="fit-img" src="img/preview-img.png"
                   alt="preview-block-image"></div>
